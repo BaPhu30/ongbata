@@ -1,0 +1,18 @@
+--- 
+documentroot: /home/giaphaobt/public_html
+group: giaphaobt
+hascgi: 0
+homedir: /home/giaphaobt
+ip: 45.252.249.32
+ipv6: ~
+owner: toidayho
+phpopenbasedirprotect: ~
+port: 443
+secruleengineoff: ~
+serveradmin: webmaster@giapha.ongbata.vn
+serveralias: mail.giapha.ongbata.vn www.giapha.ongbata.vn
+servername: giapha.ongbata.vn
+ssl: 1
+usecanonicalname: 'Off'
+user: giaphaobt
+userdirprotect: ''

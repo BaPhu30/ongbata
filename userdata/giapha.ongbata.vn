@@ -1,0 +1,26 @@
+--- 
+customlog: 
+  - 
+    format: combined
+    target: /etc/apache2/logs/domlogs/giapha.ongbata.vn
+  - 
+    format: "\"%{%s}t %I .\\n%{%s}t %O .\""
+    target: /etc/apache2/logs/domlogs/giapha.ongbata.vn-bytes_log
+documentroot: /home/giaphaobt/public_html
+group: giaphaobt
+hascgi: 0
+homedir: /home/giaphaobt
+ip: 45.252.249.32
+owner: toidayho
+phpopenbasedirprotect: 1
+phpversion: inherit
+port: 80
+scriptalias: 
+  - 
+    path: /home/giaphaobt/public_html/cgi-bin
+    url: /cgi-bin/
+serveradmin: webmaster@giapha.ongbata.vn
+serveralias: mail.giapha.ongbata.vn www.giapha.ongbata.vn
+servername: giapha.ongbata.vn
+usecanonicalname: 'Off'
+user: giaphaobt

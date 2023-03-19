@@ -1,0 +1,49 @@
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+RewriteEngine on
+
+RewriteRule ^index/?$ index.php? [NC]
+RewriteRule ^index/page/([0-9-]+)/?$ index.php?page=$1? [NC]
+
+#RewriteRule ^plans/?$ plans.php? [NC]
+
+#RewriteRule ^new\/survey/?$ newsurvey.php? [NC]
+
+RewriteRule ^families/my/?$ list.php?pg=my [NC]
+RewriteRule ^families/my/page/([0-9-]+)/?$ list.php?pg=my&page=$1? [NC]
+RewriteRule ^families/all/?$ list.php? [NC]
+RewriteRule ^families/all/page/([0-9-]+)/?$ list.php?page=$1? [NC]
+
+RewriteRule ^users/all/?$ users.php? [NC]
+RewriteRule ^users/all/page/([0-9-]+)/?$ users.php?page=$1? [NC]
+
+RewriteRule ^user\/details\/([0-9-]+)/?$ details\.php\?id=$1? [NC]
+RewriteRule ^user\/details/?$ details\.php? [NC]
+
+
+RewriteRule ^tree/([A-Za-z0-9-]+)/([0-9-]+)/?$ tree.php?id=$2&t=$1? [NC]
+#RewriteRule ^edit/survey/([0-9-]+)/?$ editsurvey.php?id=$1? [NC]
+
+RewriteRule ^page/([0-9-]+)/?$ page.php?id=$1? [NC]
+#RewriteRule ^rapport/([0-9-]+)/?$ rapport.php?id=$1? [NC]
+
+RewriteRule ^dashboard/([A-Za-z0-9-]+)/id/([0-9-]+)/?$ dashboard.php\?pg=$1&id=$2 [NC]
+RewriteRule ^dashboard/([A-Za-z0-9-]+)/page/([0-9-]+)/?$ dashboard.php\?pg=$1&page=$2 [NC]
+RewriteRule ^dashboard/([A-Za-z0-9-]+)/?$ dashboard.php\?pg=$1 [NC]
+RewriteRule ^dashboard/?$ dashboard.php? [NC]
+
+#RewriteCond %{HTTPS} !on
+#RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+#RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+# RewriteCond     %{SERVER_PORT} ^80$
+# #RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+DirectoryIndex index.html index.php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

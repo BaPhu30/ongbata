@@ -1,0 +1,26 @@
+; cPanel first:98.0.6 (update_time):1675466523 Cpanel::ZoneFile::VERSION:1.3 hostname:rsh10-25052.azdigihost.com latest:106.0.14
+; Zone file for giapha.ongbata.vn
+$TTL 14400
+giapha.ongbata.vn.	86400	IN	SOA	ns1-rsh.azdigi.com.	toidayhoc.datdia.com.	(
+						2023020307 ;Serial Number
+						3600 ;refresh
+						1800 ;retry
+						1209600 ;expire
+						86400	)
+giapha.ongbata.vn.	86400	IN	NS	ns1-rsh.azdigi.com.
+giapha.ongbata.vn.	86400	IN	NS	ns2-rsh.azdigi.com.
+giapha.ongbata.vn.	14400	IN	A	45.252.249.32
+giapha.ongbata.vn.	14400	IN	MX	0	giapha.ongbata.vn.
+mail	14400	IN	CNAME	giapha.ongbata.vn.
+www	14400	IN	CNAME	giapha.ongbata.vn.
+ftp	14400	IN	A	45.252.249.32
+default._domainkey	14400	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwCXKeS6LnuczOyezzMAUo7YF8uBfp4ElwKmHiJzK1s3Di/jLdwtFGQ8CcSqBPudtKVrzXFy5N2BR781SNkv7sWvBzxPtTd1t3TT35NaFSjWEx8ZBRz7hU6p1iSxp705QZkz832yThPLV0luQphHsucdQUzzHCM8Dppe5t36aK0dA4scBGGD7dUCMUmhhSwD3F" P6EXIPXs4DxYfhJHViVJqN4JtZQOjSiTF6vip82QR4VWvaLS5dh/LfzubZdiZMUrOV7dwXfvvG+dyFSxw/SJhxmuw7sogTUkDNXm+1mL/tiXYYZHAjz3ZIscYbisU8WgEnblAKrA+tA5gu9iL83ewIDAQAB\;
+_cpanel-dcv-test-record	14400	IN	TXT	_cpanel-dcv-test-record=cRbQilY1ONqv9S8Cwe4WZLlLcM6ey2VvlobP90eDh_RPfbx_SINnheXcB21HPNa0
+_acme-challenge.webmail	14400	IN	TXT	9gju07caiO55UprqMTQxbLFgTejTwfm7ZY02OyzJ-7E
+_acme-challenge.cpcalendars	14400	IN	TXT	0t7qp6jxUcKyZoCJ_N3MeCEStcu1JnInqhIQJ_tKUtc
+_acme-challenge.cpanel	14400	IN	TXT	qHoN1m_KqRlA9nCKhPD6Fa8mNMob_-YDWKEWdsJHvhs
+_acme-challenge.cpcontacts	14400	IN	TXT	k-HUndmkLT1JQ3ilfGdPq7QIarFBF1dTS6Ury0a0Pao
+_acme-challenge.webdisk	14400	IN	TXT	-l6phHYqfQFIjQHXWRaZMt99bolwWdFp5d7bWt8t7zA
+_acme-challenge.www	14400	IN	TXT	gOmDyyhsMIeGYo226IbT_U7mQeiLYiEVcRmfUzf3mb4
+_acme-challenge.mail	14400	IN	TXT	EEYuoQDxZmdsn5er-A-5kaBLyuJxiMLTMzAaiEEp5e4
+_acme-challenge	14400	IN	TXT	L9ujbgnveQzh713ZP8u6N7GbyjeQgKSBGnmNIumrx6E

@@ -1,0 +1,6 @@
+MAILTO=""
+SHELL="/usr/local/cpanel/bin/jailshell"
+0 0 * * * /usr/local/bin/php /home/giaphaobt/public_html/reset_number_submissions_blood.php
+0 0 * * * /usr/local/bin/php /home/giaphaobt/public_html/sendmail/index.php
+0 0 * * * /usr/local/bin/php /home/giaphaobt/public_html/sendmail/happy_birthday.php
+

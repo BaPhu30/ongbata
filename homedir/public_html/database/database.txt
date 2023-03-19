@@ -1,0 +1,711 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Jul 13, 2021 at 10:00 AM
+-- Server version: 5.7.32
+-- PHP Version: 7.4.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `ongbata`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_configs`
+--
+
+CREATE TABLE `ftree_v1_4_configs` (
+  `id` tinyint(3) UNSIGNED NOT NULL,
+  `variable` varchar(255) DEFAULT NULL,
+  `value` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ftree_v1_4_configs`
+--
+
+INSERT INTO `ftree_v1_4_configs` (`id`, `variable`, `value`) VALUES
+(1, 'site_title', 'Pháº§n má»m gia pháº£ Ã”ng BÃ  Ta'),
+(2, 'site_url', 'Ongbata.vn'),
+(3, 'site_description', 'Pháº§n má»m gia pháº£ Ã”ng BÃ  Ta lÃ  nÆ¡i lÆ°u trá»¯ thÃ´ng tin gia pháº£ trong dÃ²ng há», hÃ¬nh áº£nh Ã´ng bÃ , Ä‘á»‹nh vá»‹ má»™, nháº¯c nhá»Ÿ ngÃ y giá»—, cháº¡p. ChÃºng tÃ´i mong muá»‘n gÃ³p pháº§n nhá» cÃ´ng sá»©c Ä‘á»ƒ lÆ°u trá»¯ nhá»¯ng kÃ½ á»©c dÃ²ng há» Ä‘á»ƒ con chÃ¡u sau nÃ y cÃ³ thá»ƒ há»c há»i lá»‹ch sá»­ cuá»™i nguá»“n cá»§a dÃ²ng tá»™c'),
+(4, 'site_keywords', 'Pháº§n má»m gia pháº£, cÃ¢y gia pháº£ online, thiáº¿t káº¿ gia pháº£, xÃ¢y dá»±ng gia pháº£ dÃ²ng há»'),
+(5, 'site_author', 'Puerto Khalid'),
+(6, 'site_register', '0'),
+(7, 'site_plans', '1'),
+(8, 'site_register_status', '0'),
+(9, 'site_families_status', '0'),
+(10, 'site_reset_password_msg', NULL),
+(11, 'color1', '#27ae60'),
+(12, 'color2', '#2ecc71'),
+(13, 'color3', '#0e8842'),
+(14, 'color4', '#f0f9f7'),
+(15, 'color5', '#35a299'),
+(16, 'color6', '#a29bfe'),
+(17, 'color7', '#fdb105'),
+(18, 'color8', '#d43233'),
+(19, 'color9', '#000'),
+(20, 'color10', '#DDD'),
+(51, 'site_smtp_auth', '1'),
+(50, 'site_smtp_port', '587'),
+(26, 'site_noreply', 'donotreply@puertokhalid.com'),
+(31, 'login_facebook', '1'),
+(32, 'login_twitter', '1'),
+(33, 'login_google', '1'),
+(34, 'login_fbAppId', ''),
+(35, 'login_fbAppSecret', ''),
+(36, 'login_fbAppVersion', ''),
+(37, 'login_twConKey', ''),
+(38, 'login_twConSecret', ''),
+(39, 'login_ggClientId', ''),
+(40, 'login_ggClientSecret', ''),
+(41, 'site_paypal_id', ''),
+(42, 'site_paypal_live', '0'),
+(43, 'site_currency_name', 'USD'),
+(44, 'site_currency_symbol', '$'),
+(45, 'site_smtp', '0'),
+(46, 'site_smtp_host', 'localhost'),
+(47, 'site_smtp_username', ''),
+(48, 'site_smtp_password', ''),
+(49, 'site_smtp_encryption', 'none'),
+(52, 'site_favicon', 'assets/img/fav.png'),
+(53, 'site_paypal_client_id', ''),
+(54, 'site_paypal_client_secret', ''),
+(62, 'site_stripe_key', ''),
+(63, 'site_stripe_secret', ''),
+(65, 'site_ads1', ''),
+(66, 'site_ads2', '<img src=\"http://puertokhalid.com/quizy/assets/img/ads/ads2.png\">'),
+(67, 'site_ads3', '<img src=\"http://puertokhalid.com/quizy/assets/img/ads/ads3.png\">'),
+(68, 'site_ads4', '<img src=\"http://puertokhalid.com/quizy/assets/img/ads/ads3.png\">'),
+(69, 'site_ads5', '<img src=\"http://puertokhalid.com/quizy/assets/img/ads/ads2.png\">'),
+(70, 'site_ads6', '<img src=\"http://puertokhalid.com/quizy/assets/img/ads/ads2.png\">'),
+(71, 'site_language', '{\"rtl\":\"true\",\"lang\":\"vi\",\"success\":\"Thành công\",\"error\":\"Lá»—i!\",\"rip\":\"YÃŠN NGHá»ˆ\",\"site\":{\"title\":\"Phần mềm gia phả ông bà ta\",\"no-result\":\"KhÃ´ng cÃ³ káº¿t quáº£ nÃ o!\",\"submit\":\"Gá»­i Ä‘i\",\"close\":\"ÄÃ³ng\",\"emailver\":\"Email xÃ¡c thá»±c:\"},\"header\":{\"welcome\":\"ChÃ o má»«ng\",\"search\":\"TÃ¬m kiáº¿m gia Ä‘Ã¬nh ...\",\"home\":\"Trang Chá»§\",\"family\":\"Gia pháº£\",\"plans\":\"CÃ¡c káº¿ hoáº¡ch\",\"about\":\"Vá» chÃºng tÃ´i\",\"contact\":\"Contact Us\",\"details\":\"ThÃ´ng tin chi tiáº¿t\",\"logout\":\"ÄÄƒng xuáº¥t\",\"no-not\":\"KhÃ´ng cÃ³ thÃ´ng bÃ¡o\",\"newtree\":\"Táº¡o gia pháº£\",\"dashboard\":\"Báº£ng Ä‘iá»u khiá»ƒn\",\"users\":\"NgÆ°á»i dÃ¹ng\",\"fam\":\"Gia pháº£\",\"fammanag\":\"NgÆ°á»i quáº£n lÃ½ (Chá»‰ tÃªn ngÆ°á»i dÃ¹ng):\"},\"plans\":{\"title\":\"Simple Pricing for Everyone!\",\"desc\":\"Äá»‹nh giÃ¡ Ä‘Æ°á»£c xÃ¢y dá»±ng cho cÃ¡c doanh nghiá»‡p thuá»™c má»i quy mÃ´. LuÃ´n biáº¿t nhá»¯ng gÃ¬ báº¡n sáº½ pháº£i tráº£. Táº¥t cáº£ cÃ¡c káº¿ hoáº¡ch Ä‘á»u Ä‘i kÃ¨m vá»›i Ä‘áº£m báº£o hoÃ n tiá»n 100%.\",\"month\":\"/per month\",\"btn\":\"Báº¯t Ä‘áº§u\",\"alert\":{\"success\":\"Your payments have been calculated!\"}},\"indexpage\":{\"h4\":\"pháº§n má»m gia pháº£ online\",\"h2\":\"Ã”ng bÃ  ta\",\"p\":\"Pháº§n má»m gia pháº£ Ã´ng bÃ  ta lÃ  nÆ¡i lÆ°u trá»¯ thÃ´ng tin cá»§a dÃ²ng há», nháº¯c nhá»Ÿ con chÃ¡u tá»¥ hop vá»›i gia Ä‘Ã¬nh á»Ÿ nhá»¯ng ngÃ y giá»—, cháº¡p thÃ´ng qua á»©ng dá»¥ng nháº¯c nhá»Ÿ tá»± Ä‘á»™ng tá»« tin nháº¯n cá»§a má»—i cÃ¡ nhÃ¢n.\",\"form\":{\"b\":\"NÆ¡i lÆ°u trá»¯ kÃ­ á»©c, hiá»‡n thá»±c vÃ  tÆ°Æ¡ng lai\",\"s\":\"\",\"login\":\"ÄÄƒng nháº­p\",\"register\":\"ÄÄƒng kÃ½\",\"fid\":{\"l\":\"TÃªn ÄÄƒng Nháº­p\",\"i\":\"Nháº­p tÃªn Ä‘Äƒng nháº­p\"},\"pass\":{\"l\":\"Máº­t kháº©u\",\"i\":\"Nháº­p máº­t kháº©u\"},\"npass\":{\"l\":\"Máº­t kháº©u má»›i\",\"i\":\"Nháº­p máº­t kháº©u má»›i\"},\"vpass\":{\"l\":\"Máº­t kháº©u Ä‘á»ƒ xem gia pháº£\",\"i\":\"Nháº­p máº­t kháº©u Ä‘á»ƒ xem gia pháº£\"},\"email\":{\"l\":\"Email:\",\"i\":\"Nháº­p email\"},\"in\":\"ÄÄƒng nháº­p\",\"up\":\"ÄÄƒng kÃ­\",\"view\":\"Má»i ngÆ°á»i cÃ³ thá»ƒ tháº¥y gia pháº£ nÃ y\"},\"my\":\"Gia Pháº£\",\"list\":\"Danh sÃ¡ch cÃ¡c cÃ¢y báº¡n quáº£n lÃ½!\",\"more\":\"Káº¿t quáº£ khÃ¡c!\",\"forget\":\"QuÃªn máº­t kháº©u cá»§a báº¡n?\",\"reset\":\"Reset it now\",\"pravicy\":\"ChÃ­nh sÃ¡ch báº£o máº­t\",\"byclick\":\"Báº±ng cÃ¡ch nháº¥p vÃ o nÃºt ÄÄƒng kÃ½, báº¡n Ä‘Ã£ tá»± Ä‘á»™ng cháº¥p nháº­n trong {a} cá»§a chÃºng tÃ´i, Ä‘á»«ng ngáº§n ngáº¡i Ä‘á»c nÃ³ trÆ°á»›c!\"},\"treepage\":{\"vp\":{\"t\":\"Xem máº­t kháº©u:\",\"p\":\"ChÃºng tÃ´i ráº¥t tiáº¿c pháº£i thÃ´ng bÃ¡o vá»›i báº¡n ráº±ng, gia Ä‘Ã¬nh nÃ y khÃ´ng Ä‘Æ°á»£c cÃ´ng khai. báº¡n cáº§n cÃ³ cháº¿ Ä‘á»™ xem máº­t kháº©u Ä‘á»ƒ hiá»ƒn thá»‹ nÃ³.\",\"i\":\"Máº­t kháº©u Ä‘á»ƒ xem gia pháº£\",\"b\":\"Nháº­p\"},\"edit\":\"Chá»‰nh sá»­a\",\"new\":\"ThÃ nh viÃªn má»›i\",\"link\":\"ÄÆ°á»ng dáº«n gia pháº£\",\"fam\":\"s gia pháº£:\",\"share\":\"Chia sáº»\",\"share_f\":\"Chia sáº» trÃªn Facebook\",\"share_t\":\"Chia sáº» trÃªn Twitter\",\"share_w\":\"Chia sáº» trÃªn Whatsapp\",\"share_e\":\"Gá»­i email\",\"pdf\":\"Xuáº¥t hÃ¬nh áº£nh\"},\"heritage\":{\"title\":\"Di sáº£n cá»§a gia Ä‘Ã¬nh\",\"link\":\"LiÃªn káº¿t thÃ nh viÃªn nÃ y vá»›i tÆ° cÃ¡ch lÃ  cha máº¹ cá»§a gia Ä‘Ã¬nh:\"},\"detailspage\":{\"title\":\"Quáº£n lÃ½ thÃ´ng tin chi tiáº¿t cá»§a báº¡n\",\"send\":\"Gá»­i chi tiáº¿t\",\"username\":\"TÃªn ngÆ°á»i dÃ¹ng cá»§a báº¡n\",\"username_l\":\"Viáº¿t tÃªn cá»§a báº¡n\"},\"contactpage\":{\"title\":\"LiÃªn há»‡ chÃºng tÃ´i\"},\"aboutpage\":{\"title\":\"Vá» chÃºng tÃ´i\"},\"userspage\":{\"title\":\"TÃªn ngÆ°á»i dÃ¹ng:\",\"families\":\"Gia Ä‘Ã¬nh\"},\"resetpage\":{\"title1\":\"Láº¥y láº¡i máº­t kháº©u cá»§a báº¡n:\",\"email\":\"Äá»‹a chá»‰ email Ä‘Ã£ Ä‘Äƒng kÃ½ cá»§a báº¡n\",\"title\":\"Láº¥y láº¡i máº­t kháº©u má»›i\",\"npass\":\"Máº­t kháº©u má»›i\",\"npass_l\":\"Nháº­p máº­t kháº©u cá»§a báº¡n\",\"rpass\":\"Nháº­p láº¡i máº­t kháº©u\",\"rpass_l\":\"Nháº­p láº¡i máº­t kháº©u\"},\"listpage\":{\"title\":\"Danh sÃ¡ch gia pháº£\",\"no-result\":\"KhÃ´ng cÃ³ káº¿t quáº£ !\",\"members\":\"Nhá»¯ng thÃ nh viÃªn\",\"my\":\"Gia pháº£\",\"edit\":\"Chá»‰nh sá»­a\"},\"timedate\":{\"time_second\":\"second\",\"time_minute\":\"minute\",\"time_hour\":\"hour\",\"time_day\":\"day\",\"time_week\":\"week\",\"time_month\":\"month\",\"time_year\":\"year\",\"time_decade\":\"decade\",\"time_ago\":\"ago\"},\"newmember\":{\"title\":\"ThÃªm má»›i thÃ nh viÃªn\",\"personal\":\"CÃ¡ nhÃ¢n\",\"contact\":\"LiÃªn há»‡\",\"biographical\":\"Tiá»ƒu sá»­\",\"pictures\":\"HÃ¬nh áº£nh\",\"link\":\"Káº¿t ná»‘i thÃ nh viÃªn nÃ y má»›i tÃªn ngÆ°á»i dÃ¹ng (cÃ³ thá»ƒ bá» trá»‘ng) : ....\",\"first\":\"TÃªn\",\"last\":\"Há»\",\"gender\":\"Giá»›i tÃ­nh\",\"female\":\"Ná»¯\",\"male\":\"Nam\",\"rtype\":\"Má»‘i quan há»‡\",\"child\":\"Con\",\"ex\":\"Vá»£ / chá»“ng (Ä‘Ã£ ly dá»‹)\",\"parent\":\"Bá»‘ / Máº¹\",\"partner\":\"Vá»£ / chá»“ng (hiá»‡n táº¡i)\",\"bdate\":\"NgÃ y thÃ¡ng nÄƒm sinh\",\"mdate\":\"NgÃ y thÃ¡ng nÄƒm cÆ°á»›i\",\"ddate\":\"NgÃ y máº¥t\",\"alive\":\"ThÃ nh viÃªn nÃ y váº«n cÃ²n sá»‘ng\",\"photo_url\":\"Enter Photo URL\",\"photo\":\"HÃ¬nh áº£nh\",\"choose\":\"Choose an image from your device\",\"instead\":\"Hoáº·c chá»n hÃ¬nh avarta\",\"website\":\"Website\",\"tel\":\"Home Tel\",\"mobile\":\"Mobile\",\"bplace\":\"Birth Place\",\"dplace\":\"Death Place\",\"profession\":\"Profession\",\"company\":\"Company\",\"interests\":\"Interests\",\"bio\":\"Bio Notes\",\"photos\":\"Photos\",\"lab1\":\"Nháº­p tÃªn thÃ nh viÃªn\",\"lab2\":\"Nháº­p há»\",\"lab3\":\"Enter Facebook\",\"lab4\":\"Enter Twitter\",\"lab5\":\"Enter Instagram\",\"lab6\":\"Enter Email\",\"lab7\":\"Enter Website\",\"lab8\":\"Enter Home Tel\",\"lab9\":\"Enter Mobile\",\"lab10\":\"Enter Birth Place\",\"lab11\":\"Enter Death Place\",\"lab12\":\"Enter Profession\",\"lab13\":\"Enter Company\",\"lab14\":\"Enter Interests\",\"lab15\":\"Enter Bio Notes\",\"bornat\":\"Born at\",\"bornin\":\"in\",\"deadat\":\"Dead at\",\"marriageat\":\"Marriage at\"},\"details\":{\"title\":\"Manage infos:\",\"firstname\":\"Your first name\",\"lastname\":\"Your last name\",\"username\":\"Edit Username\",\"password\":\"Edit Password\",\"email\":\"Edit Email\",\"male\":\"Male\",\"female\":\"Female\",\"country\":\"Country\",\"state\":\"State/Region\",\"city\":\"City\",\"address\":\"Full Address\",\"image_n\":\"KhÃ´ng cÃ³ hÃ¬nh áº£nh nÃ o Ä‘Æ°á»£c chá»n ...\",\"image_c\":\"Chá»n hÃ¬nh áº£nh\",\"button\":\"Gá»­i thÃ´ng tin\",\"alert\":{\"success\":\"QuÃ¡ trÃ¬nh chá»‰nh sá»­a thÃ´ng tin Ä‘Ã£ káº¿t thÃºc thÃ nh cÃ´ng.\"}},\"alerts\":{\"families\":\"Sá»‘ lÆ°á»£ng gia Ä‘Ã¬nh mÃ  báº¡n cÃ³ thá»ƒ thÃªm vÃ o gÃ³i báº¡n cÃ³ Ä‘Ã£ háº¿t háº¡n, vui lÃ²ng nÃ¢ng cáº¥p gÃ³i cá»§a báº¡n Ä‘á»ƒ biáº¿t thÃªm!\",\"members\":\"Sá»‘ lÆ°á»£ng thÃ nh viÃªn má»—i gia Ä‘Ã¬nh mÃ  báº¡n cÃ³ thá»ƒ thÃªm cho gÃ³i báº¡n cÃ³ Ä‘Ã£ háº¿t háº¡n, vui lÃ²ng nÃ¢ng cáº¥p gÃ³i cá»§a báº¡n Ä‘á»ƒ cÃ³ thÃªm!\",\"albums\":\"Báº¡n khÃ´ng cÃ³ quyá»n thÃªm áº£nh vÃ o album báº±ng gÃ³i báº¡n cÃ³, vui lÃ²ng nÃ¢ng cáº¥p gÃ³i cá»§a báº¡n Ä‘á»ƒ biáº¿t thÃªm!\",\"heritage\":\"Báº¡n khÃ´ng cÃ³ quyá»n sá»­ dá»¥ng gÃ³i di sáº£n mÃ  báº¡n cÃ³, vui lÃ²ng nÃ¢ng cáº¥p gÃ³i cá»§a báº¡n Ä‘á»ƒ biáº¿t thÃªm!\",\"no-data\":\"KhÃ´ng tÃ¬m tháº¥y dá»¯ liá»‡u nÃ o!\",\"nodata\":\"KhÃ´ng tÃ¬m tháº¥y dá»¯ liá»‡u nÃ o!\",\"logout\":\"Báº¡n cÃ³ cháº¯c cháº¯n báº¡n muá»‘n thoÃ¡t?\",\"nofile\":\"KhÃ´ng cÃ³ táº­p tin nÃ o Ä‘Æ°á»£c chá»n...\",\"required\":\"Táº¥t cáº£ cÃ¡c trÆ°á»ng lÃ  báº¯t buá»™c!\",\"login\":\"Báº¡n Ä‘Ã£ Ä‘Äƒng nháº­p thÃ nh cÃ´ng!\",\"viewp\":\"Máº­t kháº©u khÃ´ng chÃ­nh xÃ¡c!\",\"wrong\":\"CÃ³ gÃ¬ Ä‘Ã³ khÃ´ng Ä‘Ãºng!\",\"done\":\"Táº¥t cáº£ Ä‘Ã£ Ä‘Æ°á»£c lÃ m xong!\",\"payment\":\"Thanh toÃ¡n thÃ nh cÃ´ng!\",\"payment_f\":\"KhÃ´ng thá»ƒ truy xuáº¥t thanh toÃ¡n tá»« PayPal!\",\"alldone\":\"ThÃ nh cÃ´ng, táº¥t cáº£ Ä‘Ã£ xong!\",\"famexist\":\"Gia Ä‘Ã¬nh nÃ y Ä‘Ã£ tá»“n táº¡i!\",\"name\":\"TÃªn lÃ  báº¯t buá»™c!\",\"correctemail\":\"Báº¡n cáº§n má»™t Ä‘á»‹a chá»‰ email chÃ­nh xÃ¡c!\",\"existemail\":\"Email nÃ y Ä‘Ã£ tá»“n táº¡i!\",\"existusername\":\"TÃªn ngÆ°á»i dÃ¹ng nÃ y Ä‘Ã£ tá»“n táº¡i!\",\"regsuccess\":\"Báº¡n Ä‘Ã£ Ä‘Æ°á»£c Ä‘Äƒng kÃ½ thÃ nh cÃ´ng.\",\"regsuccess1\":\"Báº¡n Ä‘Ã£ Ä‘Äƒng kÃ½ thÃ nh cÃ´ng, nhÆ°ng chÃºng tÃ´i Ä‘Ã£ gá»­i cho báº¡n má»™t email Ä‘á»ƒ xÃ¡c minh!\",\"regsuccess2\":\"Báº¡n Ä‘Ã£ Ä‘Äƒng kÃ½ thÃ nh cÃ´ng, nhÆ°ng cáº§n Ä‘Æ°á»£c ban quáº£n trá»‹ cháº¥p nháº­n!\",\"famsuccess\":\"ID gia Ä‘Ã¬nh cá»§a báº¡n Ä‘Ã£ Ä‘Æ°á»£c táº¡o thÃ nh cÃ´ng!\",\"logsuccess\":\"Báº¡n Ä‘Ã£ Ä‘Äƒng nháº­p thÃ nh cÃ´ng!\",\"logapprov\":\"ngÆ°á»i dÃ¹ng nÃ y cáº§n Ä‘Æ°á»£c quáº£n lÃ½ phÃª duyá»‡t trÆ°á»›c khi Ä‘Äƒng nháº­p!\",\"logverif\":\"ngÆ°á»i dÃ¹ng nÃ y cáº§n xÃ¡c minh báº±ng Ä‘á»‹a chá»‰ email!\",\"logerror\":\"ID gia Ä‘Ã¬nh hoáº·c máº­t kháº©u khÃ´ng chÃ­nh xÃ¡c!\",\"reseterror\":\"KhÃ´ng cÃ³ ngÆ°á»i dÃ¹ng vá»›i thÃ´ng tin nÃ y!\",\"resetsuccess\":\"ÄÃ£ gá»­i máº­t kháº©u Ä‘áº·t láº¡i thÃ nh cÃ´ng.\",\"permission\":\"Báº¡n khÃ´ng cÃ³ quyá»n truy cáº­p vÃ o trang nÃ y!\",\"emailver\":\"ÄÆ°á»£c rá»“i, báº¡n cÃ³ thá»ƒ Ä‘Äƒng nháº­p ngay bÃ¢y giá».\",\"her_1\":\"báº¡n khÃ´ng thá»ƒ xáº¿p háº¡ng gia Ä‘Ã¬nh nÃ y vÃ¬ nÃ³ khÃ´ng pháº£i lÃ  cá»§a báº¡n!\",\"her_2\":\"báº¡n khÃ´ng thá»ƒ xáº¿p má»™t gia Ä‘Ã¬nh hai láº§n trong cÃ¹ng má»™t cÃ¢y!\",\"her_3\":\"báº¡n khÃ´ng thá»ƒ xáº¿p háº¡ng gia Ä‘Ã¬nh nÃ y vÃ¬ nÃ³ khÃ´ng Ä‘Æ°á»£c cÃ´ng khai!\",\"her_4\":\"báº¡n khÃ´ng thá»ƒ cháº¡y theo gia Ä‘Ã¬nh nÃ y!\",\"pass1\":\"máº­t kháº©u nhiá»u hÆ¡n 6 chá»¯ cÃ¡i\",\"pass2\":\"máº­t kháº©u khÃ´ng khá»›p vá»›i máº­t kháº©u\",\"pass3\":\"báº¡n cÃ³ thá»ƒ Ä‘Äƒng nháº­p ngay bÃ¢y giá» báº±ng máº­t kháº©u má»›i nÃ y\",\"de_mem\":\"Báº¡n cÃ³ cháº¯c cháº¯n muá»‘n xÃ³a thÃ nh viÃªn nÃ y khÃ´ng?\"},\"dash\":{\"p_disacticate\":\"Táº¯t tÃ¹y chá»n gÃ³i\",\"planalert\":\"CÃ¡c káº¿ hoáº¡ch Ä‘Ã£ Ä‘Æ°á»£c lÆ°u thÃ nh cÃ´ng.\",\"p_title\":\"Thanh toÃ¡n\",\"p_user\":\"NgÆ°á»i dÃ¹ng\",\"p_status\":\"Tráº¡ng thÃ¡i\",\"p_amount\":\"Sá»‘ tiá»n\",\"p_paymentid\":\"ID thanh toÃ¡n\",\"p_payerid\":\"ID ngÆ°á»i thanh toÃ¡n\",\"created_at\":\"ÄÆ°á»£c táº¡o lÃºc\",\"u_create\":\"Táº¡o ngÆ°á»i dÃ¹ng\"},\"dashboard\":{\"hello\":\"Xin chÃ o,\",\"welcome\":\"ChÃ o má»«ng báº¡n trá»Ÿ láº¡i trang tá»•ng quan cá»§a báº¡n má»™t láº§n ná»¯a.\",\"stats_line_d\":\"Sá»‘ liá»‡u thá»‘ng kÃª trong 7 ngÃ y qua\",\"stats_line_m\":\"Sá»‘ liá»‡u thá»‘ng kÃª cho nÄƒm nay\",\"stats_bar_d\":\"Sá»‘ liá»‡u thá»‘ng kÃª trong 7 ngÃ y qua\",\"stats_bar_m\":\"Sá»‘ liá»‡u thá»‘ng kÃª cho nÄƒm nay\",\"surveys\":\"CÃ¡c gia Ä‘Ã¬nh\",\"families\":\"CÃ¡c gia Ä‘Ã¬nh\",\"users\":\"NgÆ°á»i dÃ¹ng\",\"responses\":\"CÃ¡c thÃ nh viÃªn\",\"questions\":\"HÃ¬nh áº£nh\",\"new_u\":\"NgÆ°á»i dÃ¹ng má»›i (24h)\",\"new_p\":\"Thanh toÃ¡n má»›i nháº¥t (24h)\",\"new_s\":\"Kháº£o sÃ¡t má»›i nháº¥t (24h)\",\"u_users\":\"CÃ¡c thÃ nh viÃªn\",\"u_status\":\"Tráº¡ng thÃ¡i\",\"u_username\":\"tÃªn tÃ i khoáº£n\",\"u_plan\":\"Káº¿ hoáº¡ch\",\"u_pages\":\"CÃ¡c trang\",\"u_credits\":\"TÃ­n dá»¥ng\",\"u_last_p\":\"Láº§n thanh toÃ¡n cuá»‘i cÃ¹ng\",\"u_registred\":\"ÄÄƒng kÃ½ táº¡i\",\"u_updated\":\"Cáº­p nháº­t táº¡i\",\"u_delete\":\"XÃ³a ngÆ°á»i dÃ¹ng\",\"u_edit\":\"Chá»‰nh sá»­a ngÆ°á»i dÃ¹ng\",\"p_title\":\"Thanh toÃ¡n\",\"p_user\":\"NgÆ°á»i dÃ¹ng\",\"p_status\":\"tráº¡ng thÃ¡i\",\"p_plan\":\"gÃ³i\",\"p_amount\":\"Sá»‘ tiá»n\",\"p_date\":\"NgÃ y thanh toÃ¡n\",\"p_txn\":\"TXN\",\"set_title\":\"CÃ i Ä‘áº·t chung\",\"set_stitle\":\"TiÃªu Ä‘á» trang web:\",\"set_keys\":\"Tá»« khÃ³a trang web:\",\"set_desc\":\"MÃ´ táº£ trang web:\",\"set_url\":\"URL trang web:\",\"set_btn\":\"Gá»­i cÃ i Ä‘áº·t\",\"days\":\"ngÃ y\",\"months\":\"thÃ¡ng\",\"latest_f\":\"Gia Ä‘Ã¬nh má»›i nháº¥t\",\"latest_m\":\"ThÃ nh viÃªn má»›i nháº¥t\",\"status\":\"Tráº¡ng thÃ¡i\",\"name\":\"TÃªn\",\"public\":\"CÃ´ng khai\",\"members\":\"CÃ¡c thÃ nh viÃªn\",\"moderators\":\"ngÆ°á»i Ä‘iá»u hÃ nh\",\"date\":\"ngÃ y\",\"edit\":\"Chá»‰nh sá»­a\",\"delete\":\"xoÃ¡\",\"verification\":\"xÃ¡c minh\",\"npage\":\"Trang má»›i\",\"title\":\"TiÃªu Ä‘á»\",\"inmenu\":\"trong Menu\",\"created\":\"Táº¡o\",\"regstatus\":\"Tráº¡ng thÃ¡i Ä‘Äƒng kÃ½:\",\"mneedsapproval\":\"Cáº§n phÃª duyá»‡t mÃ  khÃ´ng cáº§n email\",\"open\":\"Má»Ÿ\",\"hidereg\":\"áº¨n biá»ƒu máº«u Ä‘Äƒng kÃ½\",\"fneedsapproval\":\"Gia Ä‘Ã¬nh cáº§n Ä‘Æ°á»£c phÃª duyá»‡t trÆ°á»›c khi phÃ¡t trá»±c tiáº¿p\",\"colors\":\"MÃ u sáº¯c\",\"byemail\":\"Báº±ng email\",\"ptitle\":\"TiÃªu Ä‘á» trang\",\"picon\":\"Biá»ƒu tÆ°á»£ng trang\",\"pcontent\":\"Ná»™i dung trang\",\"dmenu\":\"Hiá»ƒn thá»‹ nÃ³ trong menu\",\"save\":\"LÆ°u\",\"alert\":{\"success\":\"CÃ i Ä‘áº·t Ä‘Ã£ Ä‘Æ°á»£c gá»­i thÃ nh cÃ´ng.\"}}}');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_families`
+--
+
+CREATE TABLE `ftree_v1_4_families` (
+  `id` smallint(5) UNSIGNED NOT NULL,
+  `author` int(10) UNSIGNED DEFAULT '0',
+  `moderators` varchar(255) DEFAULT NULL,
+  `name` varchar(200) DEFAULT NULL,
+  `password` varchar(200) DEFAULT NULL,
+  `date` int(11) UNSIGNED DEFAULT '0',
+  `levels` tinyint(1) UNSIGNED DEFAULT '0',
+  `email` varchar(200) DEFAULT NULL,
+  `vpassword` varchar(255) DEFAULT NULL,
+  `public` tinyint(1) UNSIGNED DEFAULT '0',
+  `photo` varchar(255) DEFAULT NULL,
+  `status` tinyint(1) UNSIGNED DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ftree_v1_4_families`
+--
+
+INSERT INTO `ftree_v1_4_families` (`id`, `author`, `moderators`, `name`, `password`, `date`, `levels`, `email`, `vpassword`, `public`, `photo`, `status`) VALUES
+(1, 2, 'Nhan nguyen', 'Nhan nguyen', NULL, 1622434293, 0, NULL, '7c4a8d09ca3762af61e59520943dc26494f8941b', 0, NULL, 0),
+(2, 2, 'Nhan nguyen', 'Test', NULL, 1622434357, 0, NULL, '69c5fcebaa65b560eaf06c3fbeb481ae44b8d618', 1, NULL, 0),
+(3, 1, 'toidayhoc', 'test123', NULL, 1622797600, 0, NULL, NULL, 0, NULL, 0),
+(4, 9, '', 'hiennguyen', NULL, 1623464847, 0, NULL, '7c4a8d09ca3762af61e59520943dc26494f8941b', 0, NULL, 0),
+(5, 1, '', 'Anh HoÃ ng', NULL, 1623467689, 0, NULL, NULL, 0, NULL, 0),
+(6, 7, '', 'Hatoc', NULL, 1623487741, 0, NULL, NULL, 0, NULL, 0),
+(7, 10, 'TRAN QUOCTAM', 'TRAN QUOCTAM', NULL, 1623488475, 0, NULL, 'f5c4dcd76518af553da2e6e767fe53069c197b6c', 0, NULL, 0),
+(8, 1, 'toidayhoc', 'test2', NULL, 1623570974, 0, NULL, '315cd593e9b010b215fae897c44bda4a3b6644ea', 0, NULL, 0),
+(9, 2, 'Nhan nguyen', 'nha ngoai', NULL, 1623637621, 0, NULL, NULL, 1, NULL, 0),
+(10, 11, 'trile', 'tri', NULL, 1623687216, 0, NULL, NULL, 0, NULL, 0),
+(11, 12, '', 'Há»“', NULL, 1623896898, 0, NULL, NULL, 0, NULL, 0),
+(12, 12, '', 'sua', NULL, 1623898435, 0, NULL, NULL, 0, NULL, 0),
+(13, 12, '', 'Nguyen', NULL, 1623900373, 0, NULL, NULL, 0, NULL, 0),
+(14, 13, 'phamphuongdong', 'Há» Pháº¡m', NULL, 1623925351, 0, NULL, '861b1e6b9daea9b27820b594bd759dc6da9a3c4e', 0, NULL, 0),
+(15, 14, 'LENGOCAN', 'MY FAMILY', NULL, 1623939416, 0, NULL, '5778ff09d99641bd9494019ce6396eb0cd7ecfed', 0, NULL, 0),
+(16, 2, '', 'abc123', NULL, 1624093755, 0, NULL, NULL, 1, NULL, 0),
+(17, 15, '', 'toidayhoc123', NULL, 1624867241, 0, NULL, NULL, 0, NULL, 0),
+(18, 1, '', 'toidayhoc1234324', NULL, 1625041233, 0, NULL, NULL, 0, NULL, 0),
+(19, 1, '', 'toidayhoc321', NULL, 1625286400, 0, NULL, NULL, 0, NULL, 0),
+(20, 15, '', 'toidayhoc123432', NULL, 1625543160, 0, NULL, NULL, 0, NULL, 0),
+(21, 15, '', 'Nhan Nguyen 123', NULL, 1625544944, 0, NULL, NULL, 1, NULL, 0),
+(22, 15, '', 'toidayhoc 123', NULL, 1625545014, 0, NULL, NULL, 0, NULL, 0),
+(23, 16, '', 'Anh Hoàng 13', NULL, 1625545189, 0, NULL, NULL, 1, NULL, 0),
+(24, 16, '', 'Nhan Nguyen 321', NULL, 1625545378, 0, NULL, NULL, 1, NULL, 0),
+(25, 16, '', 'toidayhoc 543', NULL, 1625545398, 0, NULL, NULL, 1, NULL, 0),
+(26, 1, '', 'toidayhoc 123123123', NULL, 1625819920, 0, NULL, NULL, 0, NULL, 0),
+(27, 1, '', 'abc test', NULL, 1625820214, 0, NULL, NULL, 1, NULL, 0),
+(28, 1, '', 'abc test1', NULL, 1625820479, 0, NULL, NULL, 1, NULL, 0),
+(29, 1, '', 'abc test2', NULL, 1625820534, 0, NULL, NULL, 0, NULL, 0),
+(30, 17, '', 'alienshooter123', NULL, 1625927207, 0, NULL, NULL, 0, NULL, 0),
+(31, 17, '', '123albien', NULL, 1625927741, 0, NULL, NULL, 0, NULL, 0),
+(32, 17, '', 'toidayhocasdsdggd', NULL, 1625927982, 0, NULL, NULL, 0, NULL, 0),
+(33, 17, '', 'nhannguyensdfsdfsdf', NULL, 1625927995, 0, NULL, NULL, 0, NULL, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_heritage`
+--
+
+CREATE TABLE `ftree_v1_4_heritage` (
+  `id` int(11) NOT NULL,
+  `family` int(10) UNSIGNED DEFAULT NULL,
+  `member` int(10) UNSIGNED DEFAULT NULL,
+  `heritage` int(10) UNSIGNED DEFAULT NULL,
+  `author` int(10) UNSIGNED DEFAULT NULL,
+  `date` int(10) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_images`
+--
+
+CREATE TABLE `ftree_v1_4_images` (
+  `id` int(11) NOT NULL,
+  `member` int(11) UNSIGNED DEFAULT '0',
+  `date` int(11) UNSIGNED DEFAULT '0',
+  `family` int(11) UNSIGNED DEFAULT '0',
+  `url` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ftree_v1_4_images`
+--
+
+INSERT INTO `ftree_v1_4_images` (`id`, `member`, `date`, `family`, `url`) VALUES
+(1, 3, 1622435628, 2, 'uploads/users/nhan-nguyen/0897c7daf7e2005d660b8ec9ee9d1ff9.jpg'),
+(2, 3, 1622435628, 2, 'uploads/users/nhan-nguyen/b8cbc44cb7ad91f9f6591086a17608e5.jpg'),
+(3, 3, 1622435628, 2, 'uploads/users/nhan-nguyen/2e6e95408586f21f30bac23285e1ce1a.jpg'),
+(4, 3, 1622435628, 2, 'uploads/users/nhan-nguyen/c1ed16beac18a04f6dda46a40d05fa78.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_members`
+--
+
+CREATE TABLE `ftree_v1_4_members` (
+  `id` int(11) NOT NULL,
+  `author` int(10) UNSIGNED DEFAULT '0',
+  `user` varchar(200) DEFAULT NULL,
+  `family` smallint(6) UNSIGNED DEFAULT '0',
+  `date` int(10) UNSIGNED DEFAULT NULL,
+  `firstname` varchar(100) DEFAULT NULL,
+  `lastname` varchar(100) DEFAULT NULL,
+  `gender` tinyint(1) UNSIGNED DEFAULT '0',
+  `birth` varchar(100) DEFAULT NULL,
+  `death` tinyint(1) UNSIGNED DEFAULT '0',
+  `type` tinyint(1) UNSIGNED DEFAULT '0',
+  `photo` varchar(255) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `site` varchar(200) DEFAULT NULL,
+  `tel` varchar(15) DEFAULT NULL,
+  `mobile` varchar(15) DEFAULT NULL,
+  `birthplace` varchar(255) DEFAULT NULL,
+  `deathplace` varchar(255) DEFAULT NULL,
+  `profession` varchar(255) DEFAULT NULL,
+  `company` varchar(255) DEFAULT NULL,
+  `interests` varchar(255) DEFAULT NULL,
+  `bio` mediumtext,
+  `level` tinyint(1) UNSIGNED DEFAULT '0',
+  `parent` int(11) UNSIGNED DEFAULT '0',
+  `birthday` tinyint(2) UNSIGNED DEFAULT '0',
+  `birthmonth` tinyint(2) UNSIGNED DEFAULT '0',
+  `birthyear` smallint(4) UNSIGNED DEFAULT '0',
+  `deathday` tinyint(2) UNSIGNED DEFAULT '0',
+  `deathmonth` tinyint(2) UNSIGNED DEFAULT '0',
+  `deathyear` smallint(4) UNSIGNED DEFAULT '0',
+  `birthdate` int(11) DEFAULT '0',
+  `mariagedate` int(11) DEFAULT '0',
+  `deathdate` int(11) DEFAULT '0',
+  `facebook` varchar(255) DEFAULT NULL,
+  `instagram` varchar(255) DEFAULT NULL,
+  `twitter` varchar(255) DEFAULT NULL,
+  `longitude` varchar(50) NOT NULL,
+  `latitude` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ftree_v1_4_members`
+--
+
+INSERT INTO `ftree_v1_4_members` (`id`, `author`, `user`, `family`, `date`, `firstname`, `lastname`, `gender`, `birth`, `death`, `type`, `photo`, `email`, `site`, `tel`, `mobile`, `birthplace`, `deathplace`, `profession`, `company`, `interests`, `bio`, `level`, `parent`, `birthday`, `birthmonth`, `birthyear`, `deathday`, `deathmonth`, `deathyear`, `birthdate`, `mariagedate`, `deathdate`, `facebook`, `instagram`, `twitter`, `longitude`, `latitude`) VALUES
+(1, 2, '', 2, 1622435233, 'NhÃ¢n', 'Nguyá»…n há»¯u', 2, NULL, 1, 1, 'uploads/MTYyMjQzNTEzNTMyOTgxMjE3NjkyMTA4MDUwMDEyMA_1622435233.jpg', '', '', '', '0914200244', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 778352400, 1622435233, 1622435233, '', '', '', '', ''),
+(2, 2, '', 2, 1622435404, 'Lá»‡', 'Tráº§n thá»‹ cáº©m', 1, NULL, 1, 2, 'uploads/SU1HXzIwMjEwNDI5XzExMTEwNl8xOTE_1622435403.jpg', '', '', '', '', '', '', '', '', '', '', 0, 1, 0, 0, 0, 0, 0, 0, 761936400, 1622394000, 1622394000, '', '', '', '', ''),
+(3, 2, '', 2, 1622435628, 'An', 'Nguyá»…n ngá»c báº£o', 1, NULL, 1, 1, 'uploads/SU1HXzIwMjEwNTE4XzE1NDEwN180ODc_1622435628.jpg', '', '', '', '', '', '', '', '', '', '', 0, 1, 0, 0, 0, 0, 0, 0, 1621098000, 1622435628, 1622435628, '', '', '', '', ''),
+(10, 9, '', 4, 1623465647, 'gbgbg', 'gbgbg', 0, NULL, 1, 2, 'images/avatar/7.jpg', '', '', '', '', '', '', '', '', '', '', 0, 9, 0, 0, 0, 0, 0, 0, 1623465647, 1623465647, 1623465647, '', '', '', '', ''),
+(11, 9, '', 4, 1623465726, 'Ã¡dasd', 'fdsfds', 2, NULL, 1, 1, 'images/avatar/13.jpg', '', '', '', '', '', '', '', '', '', '', 0, 9, 0, 0, 0, 0, 0, 0, 1623465726, 1623465726, 1623465726, '', '', '', '', ''),
+(12, 9, '', 4, 1623466023, 'Ã ghmwssa', 'cedfv', 1, NULL, 1, 2, 'images/avatar/2.jpg', '', '', '', '', '', '', '', '', '', '', 0, 9, 0, 0, 0, 0, 0, 0, 1623466023, 1623466023, 1623466023, '', '', '', '', ''),
+(13, 9, '', 4, 1623466045, 'dddj', 'fddd', 0, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 8, 0, 0, 0, 0, 0, 0, 1623466045, 1623466045, 1623466045, '', '', '', '', ''),
+(14, 9, '', 4, 1623466205, 'Huynh', 'Nguyá»…n', 2, NULL, 0, 1, 'images/avatar/1.jpg', '', '', '', '', '', '', '', '', '', '', 0, 71, 0, 0, 0, 0, 0, 0, -1640588400, -630748800, 960742800, '', '', '', '', ''),
+(15, 9, '', 4, 1623466292, 'Cáº¯t', 'Pháº¡m Thá»‹', 1, NULL, 1, 2, 'images/avatar/11.jpg', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, -2147483648, '', '', '', '', ''),
+(16, 9, '', 4, 1623466800, 'QuÃ½', 'Huá»³nh Thá»‹', 1, NULL, 0, 2, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, -1563865200, -869641200, -15062400, '', '', '', '', ''),
+(17, 9, '', 4, 1623467122, 'HuÃª', 'Nguyá»…n thá»‹', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467122, 1623467122, 1623467122, '', '', '', '', ''),
+(18, 9, '', 4, 1623467160, 'SÆ¡n', 'Nguyá»…n ThÃ¡i', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467160, 1623467160, 1623467160, '', '', '', '', ''),
+(19, 9, '', 4, 1623467185, 'NghÄ©a', 'Nguyá»…n ThÃ¡i', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467185, 1623467185, 1623467185, '', '', '', '', ''),
+(20, 9, '', 4, 1623467229, 'VÄ©nh', 'Nguyá»…n ThÃ¡i', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467229, 1623467229, 1623467229, '', '', '', '', ''),
+(21, 9, '', 4, 1623467291, 'VÃ¢n', 'Nguyá»…n Thá»‹', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467291, 1623467291, 1623467291, '', '', '', '', ''),
+(22, 9, '', 4, 1623467582, 'Viá»…n', 'Nguyá»…n Thá»‹', 0, NULL, 0, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467582, 1623467582, 1623467582, '', '', '', '', ''),
+(23, 9, '', 4, 1623467624, 'Thuá»·', 'Nguyá»…n Thá»‹', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 14, 0, 0, 0, 0, 0, 0, 1623467624, 1623467624, 1623467624, '', '', '', '', ''),
+(24, 9, '', 4, 1623467687, 'Lan', 'Chu ÄÃ¬nh', 2, NULL, 0, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 17, 0, 0, 0, 0, 0, 0, 1623467687, 1623467687, 654886800, '', '', '', '', ''),
+(25, 9, '', 4, 1623467721, 'Truáº­t', 'Cao Há»¯u', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 17, 0, 0, 0, 0, 0, 0, 1623467721, 1623467721, 1623467721, '', '', '', '', ''),
+(26, 9, '', 4, 1623467745, 'Tháº£o', 'Nguyá»…n Thá»‹', 1, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 18, 0, 0, 0, 0, 0, 0, 1623467745, 1623467745, 1623467745, '', '', '', '', ''),
+(27, 9, '', 4, 1623467766, 'LÃ²ng', 'Há»“ Thá»‹', 0, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 19, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(28, 9, '', 4, 1623467801, 'Thu', 'Nguyá»…n Thá»‹', 0, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 20, 0, 0, 0, 0, 0, 0, 1623467801, 1623467801, 1623467801, '', '', '', '', ''),
+(29, 9, '', 4, 1623467832, 'NhuÃ¢n', 'nguyá»…n vÄƒn', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 21, 0, 0, 0, 0, 0, 0, 1623467832, 1623467832, 1623467832, '', '', '', '', ''),
+(30, 9, '', 4, 1623467863, 'ÄÃ´ng', 'Nguyá»…n ThÃ nh', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 23, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(31, 9, '', 4, 1623467976, 'Chung', 'Chu ÄÃ¬nh', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 17, 0, 0, 0, 0, 0, 0, 1623467976, 1623467976, 1623467976, '', '', '', '', ''),
+(32, 9, '', 4, 1623468006, 'HiÃªn', 'Cao thi', 0, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 31, 0, 0, 0, 0, 0, 0, 1623468006, 1623468006, 1623468006, '', '', '', '', ''),
+(33, 9, '', 4, 1623468031, 'NhÃ n', 'Chu thá»‹', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 17, 0, 0, 0, 0, 0, 0, 1623468031, 1623468031, 1623468031, '', '', '', '', ''),
+(34, 9, '', 4, 1623468057, 'Háº¡nh', 'Chu thá»‹', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 17, 0, 0, 0, 0, 0, 0, 1623468057, 1623468057, 1623468057, '', '', '', '', ''),
+(36, 9, '', 4, 1623468082, 'linh', 'Cao vÄƒn', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 17, 0, 0, 0, 0, 0, 0, 1623468082, 1623468082, 1623468082, '', '', '', '', ''),
+(37, 9, '', 4, 1623468106, 'DÃ¢n', 'Nguyá»…n', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 33, 0, 0, 0, 0, 0, 0, 1623468106, 1623468106, 1623468106, '', '', '', '', ''),
+(38, 9, '', 4, 1623468127, 'nam', 'Há»“', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 34, 0, 0, 0, 0, 0, 0, 1623468127, 1623468127, 1623468127, '', '', '', '', ''),
+(39, 9, '', 4, 1623468154, 'Diá»…m', 'HoÃ n Thá»‹', 1, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 36, 0, 0, 0, 0, 0, 0, 1623468154, 1623468154, 1623468154, '', '', '', '', ''),
+(40, 9, '', 4, 1623468181, 'NgÃ¢n', 'Cao HoÃ ng ThiÃªn', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 36, 0, 0, 0, 0, 0, 0, 1623468181, 1623468181, 1623468181, '', '', '', '', ''),
+(41, 9, '', 4, 1623468204, 'BÃ¬nh', 'Há»“ Äá»©c', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 34, 0, 0, 0, 0, 0, 0, 1623468204, 1623468204, 1623468204, '', '', '', '', ''),
+(42, 9, '', 4, 1623468232, 'ThiÃªn', 'nguyá»…n chu', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 33, 0, 0, 0, 0, 0, 0, 1623468232, 1623468232, 1623468232, '', '', '', '', ''),
+(43, 9, '', 4, 1623468265, 'DuyÃªn', 'Nguyá»…n chu ká»³', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 33, 0, 0, 0, 0, 0, 0, 1623468265, 1623468265, 1623468265, '', '', '', '', ''),
+(44, 9, '', 4, 1623468301, 'HoÃ ng', 'Chu ÄÃ¬nh nháº­t', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 31, 0, 0, 0, 0, 0, 0, 1623468301, 1623468301, 1623468301, '', '', '', '', ''),
+(45, 9, '', 4, 1623468323, 'anh', 'chu thá»‹ vÃ¢n', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 31, 0, 0, 0, 0, 0, 0, 1623468323, 1623468323, 1623468323, '', '', '', '', ''),
+(46, 9, '', 4, 1623468357, 'Chau', 'Nguyá»…n thÃ¡i', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 18, 0, 0, 0, 0, 0, 0, 1623468357, 1623468357, 1623468357, '', '', '', '', ''),
+(47, 9, '', 4, 1623468382, 'lÃ¢m', 'Nguyá»…n thÃ¡i', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 18, 0, 0, 0, 0, 0, 0, 1623468382, 1623468382, 1623468382, '', '', '', '', ''),
+(48, 9, '', 4, 1623468414, 'TrÃ ', 'Nguyá»…n thÃ¡i', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 18, 0, 0, 0, 0, 0, 0, 1623468414, 1623468414, 1623468414, '', '', '', '', ''),
+(49, 9, '', 4, 1623468430, 'Ä‘áº¡t', 'Nguyá»…n thÃ¡i', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 18, 0, 0, 0, 0, 0, 0, 1623468430, 1623468430, 1623468430, '', '', '', '', ''),
+(50, 9, '', 4, 1623468552, 'KhÃ¡nh', 'Nguyá»…n thÃ¡i', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 19, 0, 0, 0, 0, 0, 0, 1623468552, 1623468552, 1623468552, '', '', '', '', ''),
+(51, 9, '', 4, 1623468583, 'Tháº£o', 'HoÃ ng Thu', 0, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 50, 0, 0, 0, 0, 0, 0, 1623468583, 1623468583, 1623468583, '', '', '', '', ''),
+(52, 9, '', 4, 1623468600, 'trinh', 'Nguyá»…n thÃ¡i', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 19, 0, 0, 0, 0, 0, 0, 1623468600, 1623468600, 1623468600, '', '', '', '', ''),
+(53, 9, '', 4, 1623468623, 'nguyen', 'VÄƒn phÃº', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 52, 0, 0, 0, 0, 0, 0, 1623468623, 1623468623, 1623468623, '', '', '', '', ''),
+(54, 9, '', 4, 1623468638, 'HiÃªn', 'Nguyá»…n thÃ¡i', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 19, 0, 0, 0, 0, 0, 0, 1623468638, 1623468638, 1623468638, '', '', '', '', ''),
+(55, 9, '', 4, 1623468657, 'vÅ©', 'Nguyá»…n thÃ¡i', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 20, 0, 0, 0, 0, 0, 0, 1623468657, 1623468657, 1623468657, '', '', '', '', ''),
+(56, 9, '', 4, 1623468686, 'giang', 'Nguyá»…n thÃ¡i hÃ ', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 20, 0, 0, 0, 0, 0, 0, 1623468686, 1623468686, 1623468686, '', '', '', '', ''),
+(57, 9, '', 4, 1623468717, 'QuyÃ¨n', 'nguyá»…n vÄƒn', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 21, 0, 0, 0, 0, 0, 0, 1623468717, 1623468717, 1623468717, '', '', '', '', ''),
+(58, 9, '', 4, 1623468737, 'quá»‘c', 'nguyá»…n vÄƒn', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 21, 0, 0, 0, 0, 0, 0, 1623468737, 1623468737, 1623468737, '', '', '', '', ''),
+(59, 9, '', 4, 1623468760, 'báº£o', 'nguyá»…n vÄƒn quá»‘c', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 21, 0, 0, 0, 0, 0, 0, 1623468760, 1623468760, 1623468760, '', '', '', '', ''),
+(60, 9, '', 4, 1623468789, 'phÃ¡t', 'Nguyá»…n ThÃ nh', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 23, 0, 0, 0, 0, 0, 0, 1623468789, 1623468789, 1623468789, '', '', '', '', ''),
+(61, 9, '', 4, 1623468820, 'Thá»‹nh', 'Nguyá»…n ThÃ nh phÃ¡t', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 23, 0, 0, 0, 0, 0, 0, 1623468820, 1623468820, 1623468820, '', '', '', '', ''),
+(62, 9, '', 4, 1623468859, 'huy', 'Nguyá»…n ThÃ nh', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 23, 0, 0, 0, 0, 0, 0, 1623468859, 1623468859, 1623468859, '', '', '', '', ''),
+(63, 9, '', 4, 1623468884, 'Háº­u', 'ThÃ¢n Dá»©c', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 46, 0, 0, 0, 0, 0, 0, 1623468884, 1623468884, 1623468884, '', '', '', '', ''),
+(64, 9, '', 4, 1623468906, 'Ä‘áº¡i', 'nguyá»…n vÄƒn', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 47, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(65, 9, '', 4, 1623468968, 'tÃ¢m', 'Nguyá»…n kháº¯c', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 48, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(66, 9, '', 4, 1623469010, 'Nhung', 'Phan thá»‹ má»¹', 1, NULL, 1, 3, '', '', '', '', '', '', '', '', '', '', '', 0, 49, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(67, 9, '', 4, 1623469210, 'Chá»‹', 'Nguyá»…n Thá»‹ kiá»u', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 22, 0, 0, 0, 0, 0, 0, 1623469210, 1623469210, 1623469210, '', '', '', '', ''),
+(70, 9, '', 4, 1623469383, 'ab', 'nguyá»…n', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 47, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(71, 9, '', 4, 1623469417, 'hgjh', 'hgfhgfh', 0, NULL, 1, 4, 'images/avatar/1.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1623469417, 1623469417, 1623469417, '', '', '', '', ''),
+(72, 9, '', 4, 1623469757, 'bo', '', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 46, 0, 0, 0, 0, 0, 0, 1623469757, 1623469757, 1623469757, '', '', '', '', ''),
+(73, 9, '', 4, 1623469773, 'xÃ­u', '', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 46, 0, 0, 0, 0, 0, 0, 1623469773, 1623469773, 1623469773, '', '', '', '', ''),
+(74, 9, '', 4, 1623469812, 'thÃ nh', 'Nguyá»…n kháº¯c', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 48, 0, 0, 0, 0, 0, 0, 1623469812, 1623469812, 1623469812, '', '', '', '', ''),
+(75, 9, '', 4, 1623469830, 'cÃ´ng', 'Nguyá»…n kháº¯c', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 48, 0, 0, 0, 0, 0, 0, 1623469830, 1623469830, 1623469830, '', '', '', '', ''),
+(76, 9, '', 4, 1623469847, 'bi', '', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 49, 0, 0, 0, 0, 0, 0, 1623469847, 1623469847, 1623469847, '', '', '', '', ''),
+(77, 9, '', 4, 1623469868, 'sá»­u', '', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 50, 0, 0, 0, 0, 0, 0, 1623469868, 1623469868, 1623469868, '', '', '', '', ''),
+(78, 9, '', 4, 1623469884, 'bÃ¡nh mÃ¬', '', 0, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 52, 0, 0, 0, 0, 0, 0, 1623469884, 1623469884, 1623469884, '', '', '', '', ''),
+(79, 9, '', 4, 1623469926, 'sÆ°Æ¡ng', 'Tráº§n Thu', 1, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 55, 0, 0, 0, 0, 0, 0, 1623469926, 1623469926, 1623469926, '', '', '', '', ''),
+(80, 9, '', 4, 1623469958, 'Ká»³', 'Tá»‘ng xuÃ¢n', 2, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 56, 0, 0, 0, 0, 0, 0, 1623469958, 1623469958, 1623469958, '', '', '', '', ''),
+(81, 9, '', 4, 1623469974, 'su', '', 1, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 55, 0, 0, 0, 0, 0, 0, 1623469974, 1623469974, 1623469974, '', '', '', '', ''),
+(82, 9, '', 4, 1623469998, 'kiá»‡t', 'Tá»‘ng anh', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 56, 0, 0, 0, 0, 0, 0, 1623469998, 1623469998, 1623469998, '', '', '', '', ''),
+(83, 7, '', 6, 1623506883, 'Hoa', '', 1, NULL, 1, 1, 'images/avatar/2.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623506883, 1623506883, 1623506883, '', '', '', '', ''),
+(84, 7, '', 6, 1623506922, 'Bá»‘ vá»£', '', 2, NULL, 1, 1, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 99, 0, 0, 0, 0, 0, 0, 1623506922, 1623506922, 1623506922, '', '', '', '', ''),
+(85, 7, '', 6, 1623506965, 'Tho', '', 1, NULL, 1, 1, 'images/avatar/2.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623506965, 1623506965, 1623506965, '', '', '', '', ''),
+(86, 7, '', 6, 1623506977, 'XÃ­u', '', 1, NULL, 1, 1, 'images/avatar/2.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623506977, 1623506977, 1623506977, '', '', '', '', ''),
+(87, 7, '', 6, 1623506989, 'Thiáº¿p', '', 1, NULL, 1, 1, 'images/avatar/2.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623506989, 1623506989, 1623506989, '', '', '', '', ''),
+(88, 7, '', 6, 1623507001, 'TiÃªn', '', 1, NULL, 1, 1, 'images/avatar/2.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623507001, 1623507001, 1623507001, '', '', '', '', ''),
+(90, 7, '', 6, 1623507064, 'Thoa', '', 1, NULL, 0, 2, 'images/avatar/10.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623507064, 1623507064, 1623507064, '', '', '', '', ''),
+(91, 7, '', 6, 1623507087, 'Luyáº¿n', '', 1, NULL, 1, 2, 'images/avatar/9.jpg', '', '', '', '', '', '', '', '', '', '', 0, 84, 0, 0, 0, 0, 0, 0, 1623507087, 1623507087, 1623507087, '', '', '', '', ''),
+(92, 7, '', 6, 1623507163, 'Thá»‘i', '', 2, NULL, 1, 2, 'images/avatar/13.jpg', '', '', '', '', '', '', '', '', '', '', 0, 83, 0, 0, 0, 0, 0, 0, 1623507163, 1623507163, 1623507163, '', '', '', '', ''),
+(93, 7, '', 6, 1623507188, 'Trung', '', 2, NULL, 1, 1, 'images/avatar/16.jpg', '', '', '', '', '', '', '', '', '', '', 0, 85, 0, 0, 0, 0, 0, 0, 1623507306, 1623507306, 1623507306, '', '', '', '', ''),
+(94, 7, '', 6, 1623507204, 'Hiá»‡p', '', 2, NULL, 1, 2, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 86, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(95, 7, '', 6, 1623507215, 'Tiáº¿n', '', 2, NULL, 1, 2, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 87, 0, 0, 0, 0, 0, 0, 1623430800, 1623430800, 1623430800, '', '', '', '', ''),
+(96, 7, '', 6, 1623507225, 'Huy', '', 2, NULL, 1, 2, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 88, 0, 0, 0, 0, 0, 0, 1623507225, 1623507225, 1623507225, '', '', '', '', ''),
+(97, 7, '', 6, 1623507333, 'Thá»§y', '', 2, NULL, 1, 2, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 85, 0, 0, 0, 0, 0, 0, 1623507333, 1623507333, 1623507333, '', '', '', '', ''),
+(98, 7, '', 6, 1623507361, 'TrÃ ', '', 1, NULL, 1, 1, 'images/avatar/14.jpg', '', '', '', '', '', '', '', '', '', '', 0, 85, 0, 0, 0, 0, 0, 0, 1623507361, 1623507361, 1623507361, '', '', '', '', ''),
+(99, 7, '', 6, 1623507392, 'Ã”ng ná»™i', '', 2, NULL, 0, 4, 'images/avatar/1.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1623507392, 1623507392, 1623507392, '', '', '', '', ''),
+(100, 7, '', 6, 1623507410, 'HÃ¹ng', '', 2, NULL, 1, 1, 'images/avatar/16.jpg', '', '', '', '', '', '', '', '', '', '', 0, 86, 0, 0, 0, 0, 0, 0, 1623507410, 1623507410, 1623507410, '', '', '', '', ''),
+(101, 7, '', 6, 1623507424, 'Duy', '', 2, NULL, 1, 1, 'images/avatar/16.jpg', '', '', '', '', '', '', '', '', '', '', 0, 86, 0, 0, 0, 0, 0, 0, 1623507424, 1623507424, 1623507424, '', '', '', '', ''),
+(102, 7, '', 6, 1623507439, 'QuÃ¢n', '', 2, NULL, 1, 1, 'images/avatar/16.jpg', '', '', '', '', '', '', '', '', '', '', 0, 87, 0, 0, 0, 0, 0, 0, 1623507439, 1623507439, 1623507439, '', '', '', '', ''),
+(103, 7, '', 6, 1623507471, 'HÃ  PhÆ°Æ¡ng', '', 1, NULL, 1, 1, 'images/avatar/14.jpg', '', '', '', '', '', '', '', '', '', '', 0, 88, 0, 0, 0, 0, 0, 0, 1623507471, 1623507471, 1623507471, '', '', '', '', ''),
+(104, 1, '', 8, 1623570995, 'Nhan', 'Nguyen', 0, NULL, 1, 1, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1623570995, 1623570995, 1623570995, '', '', '', '', ''),
+(105, 2, '', 9, 1623637651, 'Nhan', 'Nguyen', 2, NULL, 1, 1, 'images/avatar/10.jpg', '', '', '', '', '', '', '', '', '', '', 0, 108, 0, 0, 0, 0, 0, 0, 1623637651, 1623637651, 1623637651, '', '', '', '', ''),
+(106, 2, '', 9, 1623637668, 'Nhan', 'Nguyen', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 105, 0, 0, 0, 0, 0, 0, 1623637668, 1623637668, 1623637668, '', '', '', '', ''),
+(107, 2, '', 9, 1623637683, 'abc', 'abc', 0, NULL, 1, 1, 'images/avatar/8.jpg', '', '', '', '', '', '', '', '', '', '', 0, 105, 0, 0, 0, 0, 0, 0, 1623603600, 1623603600, 1623603600, '', '', '', '', ''),
+(108, 2, '', 9, 1623638101, 'Ã¡d', 'dsa', 0, NULL, 1, 4, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1623638101, 1623638101, 1623638101, '', '', '', '', ''),
+(109, 2, '', 9, 1623638124, 'sadaqwe', 'Ã¡dasd', 0, NULL, 1, 1, 'images/avatar/8.jpg', '', '', '', '', '', '', '', '', '', '', 0, 108, 0, 0, 0, 0, 0, 0, 1623638124, 1623638124, 1623638124, '', '', '', '', ''),
+(110, 11, '', 10, 1623687233, 'Nhan', 'Nguyen', 2, NULL, 1, 1, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1623687233, 1623687233, 1623687233, '', '', '', '', ''),
+(113, 12, '', 12, 1623898528, 'SÆ°a', 'Há»“', 2, NULL, 1, 1, 'images/avatar/6.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1623898528, 1623898528, 1623898528, '', '', '', '', ''),
+(114, 12, '', 12, 1623898547, 'ChÃ­n', 'Há»“', 2, NULL, 1, 1, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 113, 0, 0, 0, 0, 0, 0, 1623862800, 1623862800, 1623862800, '', '', '', '', ''),
+(115, 12, '', 12, 1623899571, 'PhÆ°', 'Tráº§n', 0, NULL, 1, 2, 'images/avatar/11.jpg', '', '', '', '', '', '', '', '', '', '', 0, 113, 0, 0, 0, 0, 0, 0, -775818000, 1623862800, 1623862800, '', '', '', '', ''),
+(116, 12, '', 12, 1623899740, 'ChÃºt', 'Há»“', 2, NULL, 1, 1, 'images/avatar/8.jpg', '', '', '', '', '', '', '', '', '', '', 0, 113, 0, 0, 0, 0, 0, 0, 1623862800, 1623862800, 1623862800, '', '', '', '', ''),
+(117, 12, '', 13, 1623900878, 'sua', 'Nguyen', 2, NULL, 1, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', ''),
+(118, 12, '', 13, 1623901131, 'PhÆ°Æ¡ng', 'LÃª', 1, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 117, 0, 0, 0, 0, 0, 0, 239302800, 1623901131, 1623901131, '', '', '', '', ''),
+(121, 12, '', 13, 1623901719, 'ChÃ­n', 'Há»“', 2, NULL, 1, 1, 'images/avatar/16.jpg', '', '', '', '', '', '', '', '', '', '', 0, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', ''),
+(123, 1, '', 5, 1623903078, 'Nhan', 'Nguyen', 0, NULL, 1, 1, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', ''),
+(124, 12, '', 13, 1623903142, 'PhÆ°', 'Tráº§n', 1, NULL, 1, 2, '', '', '', '', '', '', '', '', '', '', '', 0, 121, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', ''),
+(127, 1, '', 3, 1625040047, 'Nhan', 'Nguyen', 0, NULL, 0, 1, 'uploads/T25nYmF0YQ_1625304465.png', '', '', '', '', '', '', '', '', '', '', 0, 135, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.20777179999999', '16.0626714'),
+(128, 1, '', 18, 1625045782, 'Nhan', 'Nguyen', 2, NULL, 0, 1, 'images/avatar/14.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', ''),
+(129, 1, '', 3, 1625109331, 'Nhan', 'Nguyen', 2, NULL, 0, 1, 'images/avatar/3.jpg', '', '', '', '', '', '', '', '', '', '', 0, 127, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.20778449999999', '16.0626557'),
+(130, 1, '', 3, 1625224950, 'Nhan', 'Nguyen', 2, NULL, 0, 1, 'images/avatar/6.jpg', '', '', '', '', '', '', '', '', '', '', 0, 127, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.2104741', '16.074727799999998'),
+(131, 1, '', 3, 1625226831, 'Nhan', 'Nguyen', 2, NULL, 1, 1, 'images/avatar/9.jpg', '', '', '', '', '', '', '', '', '', '', 0, 127, 0, 0, 0, 0, 0, 0, 1619827200, 1622764800, 0, '', '', '', '', ''),
+(132, 1, '', 3, 1625230351, '', '', 0, NULL, 0, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 130, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.2104744', '16.0747263'),
+(133, 1, '', 3, 1625230381, 'Nhan', 'Nguyen', 0, NULL, 0, 1, 'images/avatar/11.jpg', '', '', '', '', '', '', '', '', '', '', 0, 132, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.2104744', '16.0747263'),
+(134, 1, '', 3, 1625230399, 'Nhan', 'Nguyen', 0, NULL, 0, 1, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 132, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.2104744', '16.0747263'),
+(135, 1, '', 3, 1625237234, 'Nhan', 'Nguyen', 2, NULL, 0, 1, 'images/avatar/8.jpg', '', '', '', '', '', '', '', '', '', '', 0, 138, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.2077875', '16.0626484'),
+(136, 1, '', 3, 1625237322, 'Nhan', 'Nguyen', 2, NULL, 0, 1, '', '', '', '', '', '', '', '', '', '', '', 0, 135, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.20776900000001', '16.0626686'),
+(137, 1, '', 3, 1625238660, 'Nhan', 'Nguyen', 2, NULL, 0, 1, 'images/avatar/15.jpg', '', '', '', '', '', '', '', '', '', '', 0, 131, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.20776319999999', '16.0626457'),
+(138, 1, '', 3, 1625284802, 'Nhan', 'Nguyen', 0, NULL, 0, 0, 'images/avatar/6.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '108.21043730000001', '16.0747115'),
+(139, 15, '', 20, 1625543193, 'asda', 'asdas', 2, NULL, 0, 1, 'images/avatar/4.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1620259200, '', '', '', '', ''),
+(140, 15, '', 20, 1625543237, 'Nhan', 'Nguyen', 2, NULL, 1, 1, 'images/avatar/8.jpg', '', '', '', '', '', '', '', '', '', '', 0, 139, 0, 0, 0, 0, 0, 0, 1619827200, 1617494400, 0, '', '', '', '', ''),
+(141, 17, '', 32, 1625928094, 'Nhan', 'Nguyen', 2, NULL, 0, 1, 'images/avatar/5.jpg', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 1619827200, 1622764800, 1620259200, '', '', '', '108.20776989999999', '16.0626842');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_notifications`
+--
+
+CREATE TABLE `ftree_v1_4_notifications` (
+  `id` int(11) NOT NULL,
+  `author` int(10) UNSIGNED DEFAULT NULL,
+  `user` int(10) UNSIGNED DEFAULT NULL,
+  `type` varchar(100) DEFAULT NULL,
+  `date` int(10) UNSIGNED DEFAULT NULL,
+  `item` int(10) UNSIGNED DEFAULT NULL,
+  `nread` tinyint(1) UNSIGNED DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ftree_v1_4_notifications`
+--
+
+INSERT INTO `ftree_v1_4_notifications` (`id`, `author`, `user`, `type`, `date`, `item`, `nread`) VALUES
+(1, 2, 2, 'moderator', 1622434293, 1, 1),
+(2, 2, 2, 'moderator', 1622434357, 2, 0),
+(3, 1, 1, 'moderator', 1622797600, 3, 0),
+(4, 10, 10, 'moderator', 1623488476, 7, 0),
+(5, 1, 1, 'moderator', 1623570976, 8, 0),
+(6, 2, 2, 'moderator', 1623637621, 9, 0),
+(7, 11, 11, 'moderator', 1623687216, 10, 0),
+(8, 13, 13, 'moderator', 1623925351, 14, 1),
+(9, 14, 14, 'moderator', 1623939417, 15, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_pages`
+--
+
+CREATE TABLE `ftree_v1_4_pages` (
+  `id` int(11) NOT NULL,
+  `icon` varchar(100) DEFAULT NULL,
+  `date` int(11) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` longtext,
+  `header` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ftree_v1_4_pages`
+--
+
+INSERT INTO `ftree_v1_4_pages` (`id`, `icon`, `date`, `title`, `content`, `header`) VALUES
+(1, 'far fa-envelope-open', 1622880307, 'LiÃªn há»‡ vá»›i chÃºng tÃ´i', '[b]XÃ¢y dá»±ng bá»Ÿi: Ongbata.vn ( cÃ¹ng vá»›i Trung tÃ¢m Ä‘Ã o táº¡o nghá» Toidayhoc)[/b]\r\n\r\n[img=690x459]https://toidayhoc.com/wp-content/uploads/2019/11/images1482021_images1481943_Khoi_nghiep_1.jpg[/img]\r\n\r\nNáº¿u cÃ³ báº¥t ká»³ váº¥n Ä‘á» hoáº·c váº¥n Ä‘á» nÃ o, Ä‘á»«ng ngáº§n ngáº¡i liÃªn há»‡ vá»›i tÃ´i theo má»™t trong cÃ¡c liÃªn káº¿t truyá»n thÃ´ng xÃ£ há»™i Ä‘Ã³:\r\n\r\n[ul]\r\n[li]URL: [color=#2ecc40][url=https://ongbata.vn/]Ongbata.vn[/url][/color][/li]\r\n[li]Zalo: 0935.070.243[/li]\r\n[/ul]\r\nBáº¡n luÃ´n Ä‘Æ°á»£c chÃ o Ä‘Ã³n, vÃ  tÃ´i sáº½ ráº¥t vui khi Ä‘Æ°á»£c há»— trá»£ báº¡n :)\r\n', 1),
+(2, 'far fa-question-circle', 1622863035, 'HÆ°á»›ng dáº«n sá»­ dá»¥ng', '[b]HÆ°á»›ng dáº«n sá»­ dá»¥ng gia pháº£ Ongbata.vn[/b]\r\n\r\nCÃ¹ng nhau lÆ°u trá»¯ ká»· niá»‡m, Ä‘á»ƒ nÃ³ sá»‘ng mÃ£i tá»« Ä‘á»i nÃ y sang Ä‘á»i khÃ¡c vá»›i gia pháº£ Ongbata. Lá»‹ch sá»­ lÃ  ngay trong dÃ²ng tá»™c cá»§a chÃ­nh mÃ¬nh\r\n\r\n\r\n\r\n1. ThÃªm gia pháº£:Â \r\n\r\n\r\n', 0),
+(3, 'fas fa-air-freshener', 1622862630, 'ChÃ­nh sÃ¡ch', '[size=6]ChÃ­nh sÃ¡ch quyá»n riÃªng tÆ° táº¡i Ã”ng BÃ  Ta[/size]\r\n\r\n\r\n\r\n\r\nTáº¡i Ongbata, cÃ³ thá»ƒ truy cáº­p tá»« https://ongbata.vn, má»™t trong nhá»¯ng Æ°u tiÃªn chÃ­nh cá»§a chÃºng tÃ´i lÃ  quyá»n riÃªng tÆ° cá»§a khÃ¡ch truy cáº­p. TÃ i liá»‡u ChÃ­nh sÃ¡ch Báº£o máº­t nÃ y chá»©a cÃ¡c loáº¡i thÃ´ng tin Ä‘Æ°á»£c thu tháº­p vÃ  ghi láº¡i bá»Ÿi Ongbata vÃ  cÃ¡ch chÃºng tÃ´i sá»­ dá»¥ng thÃ´ng tin Ä‘Ã³.\r\n\r\nNáº¿u báº¡n cÃ³ thÃªm cÃ¢u há»i hoáº·c yÃªu cáº§u thÃªm thÃ´ng tin vá» ChÃ­nh sÃ¡ch báº£o máº­t cá»§a chÃºng tÃ´i, vui lÃ²ng liÃªn há»‡ vá»›i chÃºng tÃ´i.\r\n\r\nChÃ­nh sÃ¡ch Báº£o máº­t nÃ y chá»‰ Ã¡p dá»¥ng cho cÃ¡c hoáº¡t Ä‘á»™ng trá»±c tuyáº¿n cá»§a chÃºng tÃ´i vÃ  cÃ³ giÃ¡ trá»‹ Ä‘á»‘i vá»›i khÃ¡ch truy cáº­p vÃ o trang web cá»§a chÃºng tÃ´i liÃªn quan Ä‘áº¿n thÃ´ng tin mÃ  há» Ä‘Ã£ chia sáº» vÃ  / hoáº·c thu tháº­p trong Ongbata. ChÃ­nh sÃ¡ch nÃ y khÃ´ng Ã¡p dá»¥ng cho báº¥t ká»³ thÃ´ng tin nÃ o Ä‘Æ°á»£c thu tháº­p ngoáº¡i tuyáº¿n hoáº·c qua cÃ¡c kÃªnh khÃ¡c ngoÃ i trang web nÃ y.\r\n\r\nBáº±ng lÃ²ng\r\n\r\nBáº±ng cÃ¡ch sá»­ dá»¥ng trang web cá»§a chÃºng tÃ´i, báº¡n Ä‘á»“ng Ã½ vá»›i ChÃ­nh sÃ¡ch báº£o máº­t cá»§a chÃºng tÃ´i vÃ  Ä‘á»“ng Ã½ vá»›i cÃ¡c Ä‘iá»u khoáº£n cá»§a nÃ³.\r\nThÃ´ng tin chÃºng tÃ´i thu tháº­p\r\nThÃ´ng tin cÃ¡ nhÃ¢n mÃ  báº¡n Ä‘Æ°á»£c yÃªu cáº§u cung cáº¥p vÃ  lÃ½ do táº¡i sao báº¡n Ä‘Æ°á»£c yÃªu cáº§u cung cáº¥p, sáº½ Ä‘Æ°á»£c lÃ m rÃµ cho báº¡n táº¡i thá»i Ä‘iá»ƒm chÃºng tÃ´i yÃªu cáº§u báº¡n cung cáº¥p thÃ´ng tin cÃ¡ nhÃ¢n cá»§a mÃ¬nh.\r\nNáº¿u báº¡n liÃªn há»‡ trá»±c tiáº¿p vá»›i chÃºng tÃ´i, chÃºng tÃ´i cÃ³ thá»ƒ nháº­n Ä‘Æ°á»£c thÃ´ng tin bá»• sung vá» báº¡n nhÆ° tÃªn, Ä‘á»‹a chá»‰ email, sá»‘ Ä‘iá»‡n thoáº¡i, ná»™i dung thÆ° vÃ  / hoáº·c tá»‡p Ä‘Ã­nh kÃ¨m mÃ  báº¡n cÃ³ thá»ƒ gá»­i cho chÃºng tÃ´i vÃ  báº¥t ká»³ thÃ´ng tin nÃ o khÃ¡c mÃ  báº¡n cÃ³ thá»ƒ chá»n cung cáº¥p.\r\nKhi báº¡n Ä‘Äƒng kÃ½ TÃ i khoáº£n, chÃºng tÃ´i cÃ³ thá»ƒ yÃªu cáº§u thÃ´ng tin liÃªn há»‡ cá»§a báº¡n, bao gá»“m cÃ¡c má»¥c nhÆ° tÃªn, tÃªn cÃ´ng ty, Ä‘á»‹a chá»‰, Ä‘á»‹a chá»‰ email vÃ  sá»‘ Ä‘iá»‡n thoáº¡i.\r\nCÃ¡ch chÃºng tÃ´i sá»­ dá»¥ng thÃ´ng tin cá»§a báº¡n\r\nChÃºng tÃ´i sá»­ dá»¥ng thÃ´ng tin thu tháº­p Ä‘Æ°á»£c theo nhiá»u cÃ¡ch khÃ¡c nhau, bao gá»“m:\r\nCung cáº¥p, váº­n hÃ nh vÃ  duy trÃ¬ website cá»§a chÃºng tÃ´i\r\nCáº£i thiá»‡n, cÃ¡ nhÃ¢n hÃ³a vÃ  má»Ÿ rá»™ng website cá»§a chÃºng tÃ´i\r\nHiá»ƒu vÃ  phÃ¢n tÃ­ch cÃ¡ch báº¡n sá»­ dá»¥ng website cá»§a chÃºng tÃ´i\r\nPhÃ¡t triá»ƒn cÃ¡c sáº£n pháº©m, dá»‹ch vá»¥, tÃ­nh nÄƒng vÃ  chá»©c nÄƒng má»›i\r\nLiÃªn láº¡c vá»›i báº¡n, trá»±c tiáº¿p hoáº·c thÃ´ng qua má»™t trong cÃ¡c Ä‘á»‘i tÃ¡c cá»§a chÃºng tÃ´i, bao gá»“m cáº£ dá»‹ch vá»¥ khÃ¡ch hÃ ng, Ä‘á»ƒ cung cáº¥p cho báº¡n cÃ¡c báº£n cáº­p nháº­t vÃ  thÃ´ng tin khÃ¡c liÃªn quan Ä‘áº¿n webste, cÅ©ng nhÆ° cho cÃ¡c má»¥c Ä‘Ã­ch tiáº¿p thá»‹ vÃ  quáº£ng cÃ¡o\r\nGá»­i cho báº¡n email\r\nTÃ¬m vÃ  ngÄƒn cháº·n gian láº­n\r\n\r\n\r\n[b]Tá»‡p nháº­t kÃ½[/b]\r\n\r\n\r\n\r\nOngbata tuÃ¢n theo má»™t quy trÃ¬nh tiÃªu chuáº©n cá»§a viá»‡c sá»­ dá»¥ng tá»‡p nháº­t kÃ½. CÃ¡c tá»‡p nÃ y ghi láº¡i khÃ¡ch truy cáº­p khi há» truy cáº­p cÃ¡c trang web. Táº¥t cáº£ cÃ¡c cÃ´ng ty lÆ°u trá»¯ Ä‘á»u lÃ m Ä‘iá»u nÃ y vÃ  má»™t pháº§n cá»§a phÃ¢n tÃ­ch dá»‹ch vá»¥ lÆ°u trá»¯. ThÃ´ng tin Ä‘Æ°á»£c thu tháº­p bá»Ÿi cÃ¡c tá»‡p nháº­t kÃ½ bao gá»“m Ä‘á»‹a chá»‰ giao thá»©c internet (IP), loáº¡i trÃ¬nh duyá»‡t, NhÃ  cung cáº¥p dá»‹ch vá»¥ Internet (ISP), dáº¥u ngÃ y vÃ  giá», cÃ¡c trang giá»›i thiá»‡u / thoÃ¡t vÃ  cÃ³ thá»ƒ cáº£ sá»‘ láº§n nháº¥p chuá»™t. ChÃºng khÃ´ng Ä‘Æ°á»£c liÃªn káº¿t vá»›i báº¥t ká»³ thÃ´ng tin nÃ o cÃ³ thá»ƒ nháº­n dáº¡ng cÃ¡ nhÃ¢n. Má»¥c Ä‘Ã­ch cá»§a thÃ´ng tin lÃ  Ä‘á»ƒ phÃ¢n tÃ­ch xu hÆ°á»›ng, quáº£n trá»‹ trang web, theo dÃµi chuyá»ƒn Ä‘á»™ng cá»§a ngÆ°á»i dÃ¹ng trÃªn trang web vÃ  thu tháº­p thÃ´ng tin nhÃ¢n kháº©u há»c.\r\n\r\n[b]Cookie vÃ  Web Beacons[/b]\r\nGiá»‘ng nhÆ° báº¥t ká»³ trang web nÃ o khÃ¡c, ongbata sá»­ dá»¥ng \'cookie\'. CÃ¡c cookie nÃ y Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ lÆ°u trá»¯ thÃ´ng tin bao gá»“m sá»Ÿ thÃ­ch cá»§a khÃ¡ch truy cáº­p vÃ  cÃ¡c trang trÃªn trang web mÃ  khÃ¡ch Ä‘Ã£ truy cáº­p hoáº·c Ä‘Ã£ truy cáº­p. ThÃ´ng tin Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ tá»‘i Æ°u hÃ³a tráº£i nghiá»‡m cá»§a ngÆ°á»i dÃ¹ng báº±ng cÃ¡ch tÃ¹y chá»‰nh ná»™i dung trang web cá»§a chÃºng tÃ´i dá»±a trÃªn loáº¡i trÃ¬nh duyá»‡t cá»§a khÃ¡ch truy cáº­p vÃ  / hoáº·c thÃ´ng tin khÃ¡c.\r\nÄá»ƒ biáº¿t thÃªm thÃ´ng tin chung vá» cookie, vui lÃ²ng Ä‘á»c &quot;Cookies lÃ  gÃ¬&quot;.\r\n\r\n[b]Cookie DoubleClick DART cá»§a Google[/b]\r\nGoogle lÃ  má»™t trong nhá»¯ng nhÃ  cung cáº¥p bÃªn thá»© ba trÃªn trang web cá»§a chÃºng tÃ´i. NÃ³ cÅ©ng sá»­ dá»¥ng cookie, Ä‘Æ°á»£c gá»i lÃ  cookie DART, Ä‘á»ƒ phÃ¢n phÃ¡t quáº£ng cÃ¡o cho khÃ¡ch truy cáº­p trang web cá»§a chÃºng tÃ´i dá»±a trÃªn lÆ°á»£t truy cáº­p cá»§a há» vÃ o www.website.com vÃ  cÃ¡c trang web khÃ¡c trÃªn internet. Tuy nhiÃªn, khÃ¡ch truy cáº­p cÃ³ thá»ƒ chá»n tá»« chá»‘i viá»‡c sá»­ dá»¥ng cookie DART báº±ng cÃ¡ch truy cáº­p ChÃ­nh sÃ¡ch báº£o máº­t cá»§a máº¡ng ná»™i dung vÃ  quáº£ng cÃ¡o cá»§a Google táº¡i URL sau - https://policies.google.com/technologies/ads\r\n\r\n[b]ChÃ­nh sÃ¡ch Báº£o máº­t cá»§a Äá»‘i tÃ¡c Quáº£ng cÃ¡o[/b]\r\nBáº¡n cÃ³ thá»ƒ tham kháº£o danh sÃ¡ch nÃ y Ä‘á»ƒ tÃ¬m ChÃ­nh sÃ¡ch báº£o máº­t cho tá»«ng Ä‘á»‘i tÃ¡c quáº£ng cÃ¡o cá»§a Ongbata.\r\nMÃ¡y chá»§ quáº£ng cÃ¡o hoáº·c máº¡ng quáº£ng cÃ¡o cá»§a bÃªn thá»© ba sá»­ dá»¥ng cÃ¡c cÃ´ng nghá»‡ nhÆ° cookie, JavaScript hoáº·c Web Beacons Ä‘Æ°á»£c sá»­ dá»¥ng trong cÃ¡c quáº£ng cÃ¡o vÃ  liÃªn káº¿t tÆ°Æ¡ng á»©ng cá»§a chÃºng xuáº¥t hiá»‡n trÃªn [color=#111111][size=2][font=Verdana, Arial, Helvetica, sans-serif]Ongbata[/font][/size][/color], Ä‘Æ°á»£c gá»­i trá»±c tiáº¿p Ä‘áº¿n trÃ¬nh duyá»‡t cá»§a ngÆ°á»i dÃ¹ng. Há» tá»± Ä‘á»™ng nháº­n Ä‘á»‹a chá»‰ IP cá»§a báº¡n khi Ä‘iá»u nÃ y xáº£y ra. Nhá»¯ng cÃ´ng nghá»‡ nÃ y Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ Ä‘o lÆ°á»ng hiá»‡u quáº£ cá»§a cÃ¡c chiáº¿n dá»‹ch quáº£ng cÃ¡o cá»§a há» vÃ  / hoáº·c Ä‘á»ƒ cÃ¡ nhÃ¢n hÃ³a ná»™i dung quáº£ng cÃ¡o mÃ  báº¡n tháº¥y trÃªn cÃ¡c trang web mÃ  báº¡n truy cáº­p.\r\nLÆ°u Ã½ ráº±ng [color=#111111][size=2][font=Verdana, Arial, Helvetica, sans-serif]Ongbata[/font][/size][/color] khÃ´ng cÃ³ quyá»n truy cáº­p hoáº·c kiá»ƒm soÃ¡t cÃ¡c cookie Ä‘Æ°á»£c cÃ¡c nhÃ  quáº£ng cÃ¡o bÃªn thá»© ba sá»­ dá»¥ng.\r\n\r\n[b]ChÃ­nh sÃ¡ch quyá»n riÃªng tÆ° cá»§a bÃªn thá»© ba[/b]\r\nChÃ­nh sÃ¡ch Báº£o máº­t cá»§a [color=#111111][size=2][font=Verdana, Arial, Helvetica, sans-serif]Ongbata[/font][/size][/color] khÃ´ng Ã¡p dá»¥ng cho cÃ¡c nhÃ  quáº£ng cÃ¡o hoáº·c trang web khÃ¡c. Do Ä‘Ã³, chÃºng tÃ´i khuyÃªn báº¡n nÃªn tham kháº£o ChÃ­nh sÃ¡ch Báº£o máº­t tÆ°Æ¡ng á»©ng cá»§a cÃ¡c mÃ¡y chá»§ quáº£ng cÃ¡o cá»§a bÃªn thá»© ba nÃ y Ä‘á»ƒ biáº¿t thÃªm thÃ´ng tin chi tiáº¿t. NÃ³ cÃ³ thá»ƒ bao gá»“m cÃ¡c thá»±c hÃ nh vÃ  hÆ°á»›ng dáº«n cá»§a há» vá» cÃ¡ch chá»n khÃ´ng tham gia cÃ¡c tÃ¹y chá»n nháº¥t Ä‘á»‹nh. Báº¡n cÃ³ thá»ƒ tÃ¬m tháº¥y danh sÃ¡ch Ä‘áº§y Ä‘á»§ cÃ¡c ChÃ­nh sÃ¡ch Báº£o máº­t nÃ y vÃ  cÃ¡c liÃªn káº¿t cá»§a chÃºng táº¡i Ä‘Ã¢y: LiÃªn káº¿t ChÃ­nh sÃ¡ch Báº£o máº­t.\r\nBáº¡n cÃ³ thá»ƒ chá»n táº¯t cookie thÃ´ng qua cÃ¡c tÃ¹y chá»n trÃ¬nh duyá»‡t cÃ¡ nhÃ¢n cá»§a mÃ¬nh. Äá»ƒ biáº¿t thÃªm thÃ´ng tin chi tiáº¿t vá» quáº£n lÃ½ cookie vá»›i cÃ¡c trÃ¬nh duyá»‡t web cá»¥ thá»ƒ, báº¡n cÃ³ thá»ƒ tÃ¬m tháº¥y thÃ´ng tin nÃ y táº¡i cÃ¡c trang web tÆ°Æ¡ng á»©ng cá»§a trÃ¬nh duyá»‡t. Cookie lÃ  gÃ¬?\r\n\r\n\r\n\r\n[b]Quyá»n riÃªng tÆ° cá»§a CCPA (KhÃ´ng bÃ¡n thÃ´ng tin cÃ¡ nhÃ¢n cá»§a tÃ´i)[/b]\r\n\r\nTheo CCPA, trong sá»‘ cÃ¡c quyá»n khÃ¡c, ngÆ°á»i tiÃªu dÃ¹ng California cÃ³ quyá»n:\r\nYÃªu cáº§u doanh nghiá»‡p thu tháº­p dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a ngÆ°á»i tiÃªu dÃ¹ng tiáº¿t lá»™ cÃ¡c danh má»¥c vÃ  pháº§n dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»¥ thá»ƒ mÃ  doanh nghiá»‡p Ä‘Ã£ thu tháº­p vá» ngÆ°á»i tiÃªu dÃ¹ng.\r\nYÃªu cáº§u doanh nghiá»‡p xÃ³a má»i dá»¯ liá»‡u cÃ¡ nhÃ¢n vá» ngÆ°á»i tiÃªu dÃ¹ng mÃ  doanh nghiá»‡p Ä‘Ã£ thu tháº­p.\r\nYÃªu cáº§u doanh nghiá»‡p bÃ¡n dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a ngÆ°á»i tiÃªu dÃ¹ng, khÃ´ng bÃ¡n dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a ngÆ°á»i tiÃªu dÃ¹ng.\r\nNáº¿u báº¡n Ä‘Æ°a ra yÃªu cáº§u, chÃºng tÃ´i cÃ³ má»™t thÃ¡ng Ä‘á»ƒ tráº£ lá»i báº¡n. Náº¿u báº¡n muá»‘n thá»±c hiá»‡n báº¥t ká»³ quyá»n nÃ o trong sá»‘ nÃ y, vui lÃ²ng liÃªn há»‡ vá»›i chÃºng tÃ´i.\r\n\r\n[b]Quyá»n báº£o vá»‡ dá»¯ liá»‡u GDPR[/b]\r\n\r\nChÃºng tÃ´i muá»‘n Ä‘áº£m báº£o ráº±ng báº¡n nháº­n thá»©c Ä‘áº§y Ä‘á»§ vá» táº¥t cáº£ cÃ¡c quyá»n báº£o vá»‡ dá»¯ liá»‡u cá»§a mÃ¬nh. Má»i ngÆ°á»i dÃ¹ng Ä‘Æ°á»£c hÆ°á»Ÿng nhá»¯ng Ä‘iá»u sau Ä‘Ã¢y:\r\nQuyá»n truy cáº­p - Báº¡n cÃ³ quyá»n yÃªu cáº§u báº£n sao dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a mÃ¬nh. ChÃºng tÃ´i cÃ³ thá»ƒ tÃ­nh cho báº¡n má»™t khoáº£n phÃ­ nhá» cho dá»‹ch vá»¥ nÃ y.\r\nQuyá»n cáº£i chÃ­nh - Báº¡n cÃ³ quyá»n yÃªu cáº§u chÃºng tÃ´i chá»‰nh sá»­a báº¥t ká»³ thÃ´ng tin nÃ o mÃ  báº¡n cho lÃ  khÃ´ng chÃ­nh xÃ¡c. Báº¡n cÅ©ng cÃ³ quyá»n yÃªu cáº§u chÃºng tÃ´i Ä‘iá»n Ä‘áº§y Ä‘á»§ thÃ´ng tin mÃ  báº¡n cho lÃ  chÆ°a Ä‘áº§y Ä‘á»§.\r\nQuyá»n xÃ³a - Báº¡n cÃ³ quyá»n yÃªu cáº§u chÃºng tÃ´i xÃ³a dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a báº¡n, trong má»™t sá»‘ Ä‘iá»u kiá»‡n nháº¥t Ä‘á»‹nh.\r\nQuyá»n háº¡n cháº¿ xá»­ lÃ½ - Báº¡n cÃ³ quyá»n yÃªu cáº§u chÃºng tÃ´i háº¡n cháº¿ viá»‡c xá»­ lÃ½ dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a báº¡n, trong má»™t sá»‘ Ä‘iá»u kiá»‡n nháº¥t Ä‘á»‹nh.\r\n\r\nQuyá»n pháº£n Ä‘á»‘i viá»‡c xá»­ lÃ½ - Báº¡n cÃ³ quyá»n pháº£n Ä‘á»‘i viá»‡c chÃºng tÃ´i xá»­ lÃ½ dá»¯ liá»‡u cÃ¡ nhÃ¢n cá»§a báº¡n, trong má»™t sá»‘ Ä‘iá»u kiá»‡n nháº¥t Ä‘á»‹nh.\r\nQuyá»n vá» tÃ­nh kháº£ chuyá»ƒn cá»§a dá»¯ liá»‡u - Báº¡n cÃ³ quyá»n yÃªu cáº§u chÃºng tÃ´i chuyá»ƒn dá»¯ liá»‡u mÃ  chÃºng tÃ´i Ä‘Ã£ thu tháº­p Ä‘Æ°á»£c cho má»™t tá»• chá»©c khÃ¡c hoáº·c trá»±c tiáº¿p cho báº¡n, theo má»™t sá»‘ Ä‘iá»u kiá»‡n nháº¥t Ä‘á»‹nh.\r\nNáº¿u báº¡n Ä‘Æ°a ra yÃªu cáº§u, chÃºng tÃ´i cÃ³ má»™t thÃ¡ng Ä‘á»ƒ tráº£ lá»i báº¡n. Náº¿u báº¡n muá»‘n thá»±c hiá»‡n báº¥t ká»³ quyá»n nÃ o trong sá»‘ nÃ y, vui lÃ²ng liÃªn há»‡ vá»›i chÃºng tÃ´i.\r\n\r\n[b]ThÃ´ng tin tráº» em[/b]\r\nMá»™t pháº§n Æ°u tiÃªn khÃ¡c cá»§a chÃºng tÃ´i lÃ  tÄƒng cÆ°á»ng báº£o vá»‡ tráº» em khi sá»­ dá»¥ng Internet. ChÃºng tÃ´i khuyáº¿n khÃ­ch cha máº¹ vÃ  ngÆ°á»i giÃ¡m há»™ quan sÃ¡t, tham gia vÃ  / hoáº·c giÃ¡m sÃ¡t vÃ  hÆ°á»›ng dáº«n hoáº¡t Ä‘á»™ng trá»±c tuyáº¿n cá»§a há».\r\n\r\nOngbata khÃ´ng cá»‘ Ã½ thu tháº­p báº¥t ká»³ ThÃ´ng tin Nháº­n dáº¡ng CÃ¡ nhÃ¢n nÃ o tá»« tráº» em dÆ°á»›i 13 tuá»•i. Náº¿u báº¡n cho ráº±ng con báº¡n Ä‘Ã£ cung cáº¥p loáº¡i thÃ´ng tin nÃ y trÃªn trang web cá»§a chÃºng tÃ´i, chÃºng tÃ´i Ä‘áº·c biá»‡t khuyáº¿n khÃ­ch báº¡n liÃªn há»‡ vá»›i chÃºng tÃ´i ngay láº­p tá»©c vÃ  chÃºng tÃ´i sáº½ cá»‘ gáº¯ng háº¿t sá»©c Ä‘á»ƒ loáº¡i bá» ká»‹p thá»i thÃ´ng tin Ä‘Ã³ tá»« há»“ sÆ¡ cá»§a chÃºng tÃ´i.\r\n\r\n\r\n', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_payments`
+--
+
+CREATE TABLE `ftree_v1_4_payments` (
+  `id` int(11) NOT NULL,
+  `plan` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `payment_id` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `payer_id` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `token` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `price` float(10,2) DEFAULT NULL,
+  `currency` varchar(5) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `status` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date` int(11) DEFAULT '0',
+  `author` int(11) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_plans`
+--
+
+CREATE TABLE `ftree_v1_4_plans` (
+  `id` int(11) NOT NULL,
+  `plan` varchar(50) DEFAULT NULL,
+  `price` float(10,2) DEFAULT NULL,
+  `currency` varchar(5) DEFAULT NULL,
+  `desc1` varchar(200) DEFAULT NULL,
+  `desc2` varchar(200) DEFAULT NULL,
+  `desc3` varchar(200) DEFAULT NULL,
+  `desc4` varchar(200) DEFAULT NULL,
+  `desc5` varchar(200) DEFAULT NULL,
+  `desc7` varchar(200) DEFAULT NULL,
+  `desc8` varchar(200) DEFAULT NULL,
+  `desc9` varchar(200) DEFAULT NULL,
+  `created_at` int(11) DEFAULT '0',
+  `quizzes` int(11) DEFAULT '0',
+  `takers` int(11) DEFAULT '0',
+  `questions` int(11) DEFAULT '0',
+  `export_statistics` tinyint(1) DEFAULT '0',
+  `backgound` tinyint(1) DEFAULT '0',
+  `integrations` tinyint(1) DEFAULT '0',
+  `show_ads` tinyint(1) DEFAULT '0',
+  `support` tinyint(1) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ftree_v1_4_plans`
+--
+
+INSERT INTO `ftree_v1_4_plans` (`id`, `plan`, `price`, `currency`, `desc1`, `desc2`, `desc3`, `desc4`, `desc5`, `desc7`, `desc8`, `desc9`, `created_at`, `quizzes`, `takers`, `questions`, `export_statistics`, `backgound`, `integrations`, `show_ads`, `support`) VALUES
+(1, 'Free Plan', 0.00, '$', '3 Famillies', '10 Members per family', '1 Private Family', 'Enable to heritate families', 'Enable to create albums', 'PDF Export', 'No advertisements', 'Priority support', 0, 999999, 999999, 999999, 1, 1, 1, 1, 1),
+(2, 'Basic Plan', 9.99, '$', '12 Famillies', '50 Members per family', '20 Private Family', 'Enable to heritate families', 'Enable to create albums', 'PDF Export', 'No advertisements', 'Priority support', 0, 12, 50, 20, 0, 1, 0, 0, 0),
+(3, 'Regular Plan', 19.99, '$', 'Unlimited Famillies', 'Unlimited Members per family', 'Unlimited Private Family', 'Enable to heritate families', 'Enable to create albums', 'PDF Export', 'No advertisements', 'Priority support', 0, 999999, 999999, 999999, 1, 1, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_reset_passwords`
+--
+
+CREATE TABLE `ftree_v1_4_reset_passwords` (
+  `id` smallint(5) UNSIGNED NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `date` int(10) UNSIGNED DEFAULT NULL,
+  `ip` varchar(255) DEFAULT NULL,
+  `status` tinyint(1) UNSIGNED DEFAULT NULL,
+  `token` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ftree_v1_4_reset_passwords`
+--
+
+INSERT INTO `ftree_v1_4_reset_passwords` (`id`, `email`, `date`, `ip`, `status`, `token`) VALUES
+(1, 'nhantin41@gmail.com', 1622860678, NULL, NULL, '23c95388610ef2601f7de2005ada4c57');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ftree_v1_4_users`
+--
+
+CREATE TABLE `ftree_v1_4_users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(200) DEFAULT NULL,
+  `password` varchar(200) DEFAULT NULL,
+  `date` int(10) UNSIGNED DEFAULT '0',
+  `status` tinyint(1) UNSIGNED DEFAULT NULL,
+  `token` varchar(200) DEFAULT NULL,
+  `updated_at` int(10) UNSIGNED DEFAULT NULL,
+  `family` smallint(6) UNSIGNED DEFAULT '0',
+  `firstname` varchar(100) DEFAULT NULL,
+  `lastname` varchar(100) DEFAULT NULL,
+  `gender` tinyint(1) UNSIGNED DEFAULT '0',
+  `birth` varchar(100) DEFAULT NULL,
+  `death` tinyint(1) UNSIGNED DEFAULT '0',
+  `type` tinyint(1) UNSIGNED DEFAULT '0',
+  `photo` varchar(255) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `site` varchar(200) DEFAULT NULL,
+  `tel` varchar(15) DEFAULT NULL,
+  `mobile` varchar(15) DEFAULT NULL,
+  `birthplace` varchar(255) DEFAULT NULL,
+  `deathplace` varchar(255) DEFAULT NULL,
+  `profession` varchar(255) DEFAULT NULL,
+  `company` varchar(255) DEFAULT NULL,
+  `interests` varchar(255) DEFAULT NULL,
+  `bio` mediumtext,
+  `level` tinyint(1) UNSIGNED DEFAULT '1',
+  `parent` int(11) UNSIGNED DEFAULT '0',
+  `birthday` tinyint(2) UNSIGNED DEFAULT '0',
+  `birthmonth` tinyint(2) UNSIGNED DEFAULT '0',
+  `birthyear` smallint(4) UNSIGNED DEFAULT '0',
+  `deathday` tinyint(2) UNSIGNED DEFAULT '0',
+  `deathmonth` tinyint(2) UNSIGNED DEFAULT '0',
+  `deathyear` smallint(4) UNSIGNED DEFAULT '0',
+  `birthdate` int(11) DEFAULT '0',
+  `mariagedate` int(11) DEFAULT '0',
+  `deathdate` int(11) DEFAULT '0',
+  `facebook` varchar(255) DEFAULT NULL,
+  `instagram` varchar(255) DEFAULT NULL,
+  `twitter` varchar(255) DEFAULT NULL,
+  `plan` tinyint(1) DEFAULT '0',
+  `lastpayment` int(11) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ftree_v1_4_users`
+--
+
+INSERT INTO `ftree_v1_4_users` (`id`, `username`, `password`, `date`, `status`, `token`, `updated_at`, `family`, `firstname`, `lastname`, `gender`, `birth`, `death`, `type`, `photo`, `email`, `site`, `tel`, `mobile`, `birthplace`, `deathplace`, `profession`, `company`, `interests`, `bio`, `level`, `parent`, `birthday`, `birthmonth`, `birthyear`, `deathday`, `deathmonth`, `deathyear`, `birthdate`, `mariagedate`, `deathdate`, `facebook`, `instagram`, `twitter`, `plan`, `lastpayment`) VALUES
+(1, 'toidayhoc', '315cd593e9b010b215fae897c44bda4a3b6644ea', 1622366857, 0, '', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'toidayhoc@datdia.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(2, 'Nhan nguyen', '1538d0ff1cc2ffe539368750a966b604e93d73e6', 1622433996, 0, '36bf567e1d6873457d6b169a1b682b08', 1622435020, 0, NULL, NULL, 0, NULL, 0, 0, '', 'Nhantin41@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 2, 0),
+(3, 'NguyÃªÌƒn Gia Du', '6065c0c6bbe371e7cd49f5225bf211098d4f9d97', 1622993292, 0, '8917404dd0c8c243b9c7f0cc85b02924', 1623463802, 0, NULL, NULL, 0, NULL, 0, 0, '', 'thson911@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 1, 0),
+(4, 'Nguyá»…n VÄƒn Háº¡nh', '72156510de45f1f7670f1632f5c52886ebd4fe11', 1623054889, 0, 'cbf784b7512a5ba70ac66825baf02123', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'minhhanhvc@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(5, 'banglinh', 'e3bafbec297b88e12b57b248f5e02e7c948b3f7b', 1623226323, 0, 'f5c6fc0d9bac8f00e199af0292dbe669', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'banglinh1608@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(6, 'HoÃ ng XuÃ¢n SÆ¡n', 'a50a6aece10f1136c0b8c048421e5d0d7268af0f', 1623285806, 0, 'b9f87689d79f55f1a47c299663270683', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'xuansontanan2@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(7, 'hakhuongdhkt', 'f7b59fb36e265683a4ad0a315a4eb23563e535b7', 1623336143, 0, 'f2b0d23e198a361f552e018e68fcf245', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'hakhuongdhkt@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(8, 'hungtran101083', '6a28500f32b1bff6a6ab06cdd886f8f6b6836610', 1623383250, 0, '8d95ada54250a5bfd21473471e3a260d', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'hungtran101083@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(9, 'hiennguyen', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1623463613, 0, 'ed78cd53f65aceb4baf549066ee40159', 1623463872, 0, NULL, NULL, 0, NULL, 0, 0, '', 'nguyenthaihien.khtn@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 1, 0),
+(10, 'TRAN QUOCTAM', '14f5432b00e26fe107e71d99127f725718c84e55', 1623488333, 0, 'ff12ebaac61f924694e090084e4455cc', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'quoctam@lequoc.vn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(11, 'trile', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1623687170, 0, '1d4632ac0094cd6b19f38dfcd806b216', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'trile@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(12, 'Há»“ VÄƒn GiÃ¡p', '649ecb9306b8c7714f0a22bdb2d979c1996e33ba', 1623896818, 0, '61e55f4744b040cc9938c93ce08a0b74', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'giapho.06082000@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(13, 'phamphuongdong', '861b1e6b9daea9b27820b594bd759dc6da9a3c4e', 1623925293, 0, '251f325e14e4faf47dff0920fb496a1f', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'phamphuongdong@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(14, 'LENGOCAN', '5778ff09d99641bd9494019ce6396eb0cd7ecfed', 1623939376, 0, 'de42c1ff8f5a359ef5f35d4d0a752009', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'ngocanle31052110@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(15, 'test', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1624866951, 0, 'adb1580261e3c0cae289e346bc57ea02', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'tes123@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(16, 'test1', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1625545167, 0, '1da4ec8d57b645401169d563d472d338', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'tes1232@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0),
+(17, 'test567', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1625927142, 0, '3e799a60ed286f2bd43fc28aa00fc0c3', NULL, 0, NULL, NULL, 0, NULL, 0, 0, NULL, 'tes123321@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, 0, 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `ftree_v1_4_configs`
+--
+ALTER TABLE `ftree_v1_4_configs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_families`
+--
+ALTER TABLE `ftree_v1_4_families`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_heritage`
+--
+ALTER TABLE `ftree_v1_4_heritage`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_images`
+--
+ALTER TABLE `ftree_v1_4_images`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_members`
+--
+ALTER TABLE `ftree_v1_4_members`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_notifications`
+--
+ALTER TABLE `ftree_v1_4_notifications`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_pages`
+--
+ALTER TABLE `ftree_v1_4_pages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_payments`
+--
+ALTER TABLE `ftree_v1_4_payments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_plans`
+--
+ALTER TABLE `ftree_v1_4_plans`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_reset_passwords`
+--
+ALTER TABLE `ftree_v1_4_reset_passwords`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ftree_v1_4_users`
+--
+ALTER TABLE `ftree_v1_4_users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_configs`
+--
+ALTER TABLE `ftree_v1_4_configs`
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_families`
+--
+ALTER TABLE `ftree_v1_4_families`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_heritage`
+--
+ALTER TABLE `ftree_v1_4_heritage`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_images`
+--
+ALTER TABLE `ftree_v1_4_images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_members`
+--
+ALTER TABLE `ftree_v1_4_members`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_notifications`
+--
+ALTER TABLE `ftree_v1_4_notifications`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_pages`
+--
+ALTER TABLE `ftree_v1_4_pages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_payments`
+--
+ALTER TABLE `ftree_v1_4_payments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_plans`
+--
+ALTER TABLE `ftree_v1_4_plans`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_reset_passwords`
+--
+ALTER TABLE `ftree_v1_4_reset_passwords`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `ftree_v1_4_users`
+--
+ALTER TABLE `ftree_v1_4_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;

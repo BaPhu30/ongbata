@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ảnh gia phả</title>
+    <link rel="stylesheet" href="./css/anhgiapha.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/anhgiapha.js"></script>
+</head>
+
+<body>
+    <!-- sidebar-mobile -->
+    <div id="menuMobile" class="sidebar-mobile">
+        <div class="sidebar-left">
+            <div class="sidebar-header">Phạm Web Site</div>
+            <ul class="sidebar-tabs">
+                <li class="sidebar-tabs-li">
+                    <div id="home" class="display-justify">
+                        <a href="#">Trang chủ</a>
+                        <i id="homeicon" class="fas fa-angle-down icon-angle"></i>
+                    </div>
+                    <ul id="subhome" class="sidebar-sub-menu">
+                        <li><a href="">Sự kiện gia đình</a></li>
+                        <li><a href="">Thống kê gia đình</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-tabs-li">
+                    <div id="family" class="display-justify">
+                        <a href="">Gia phả</a>
+                        <i id="familyicon" class="fas fa-angle-down icon-angle"></i>
+                    </div>
+                    <ul id="subfamily" class="sidebar-sub-menu">
+                        <li><a href="">Nguồn cội gia đình</a></li>
+                        <li><a href="">Ảnh của tôi</a></li>
+                        <li><a href="">Nhập GEDCOM</a></li>
+                        <li><a href="">Quản lý cây cối</a></li>
+                        <li><a href="">Ịn biểu đồ và sách</a></li>
+                        <li><a href="">Trình kiểm tra tính nhất quán</a></li>
+                        <li><a href="">Hơn...</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-tabs-li">
+                    <div id="discovery" class="display-justify">
+                        <a href="">Khám phá</a>
+                        <i id="discoveryicon" class="fas fa-angle-down icon-angle"></i>
+                    </div>
+                    <ul id="subdiscovery" class="sidebar-sub-menu">
+                        <li><a href="">Trung tâm khám phá</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-tabs-li">
+                    <div id="photo" class="display-justify">
+                        <a href="">Ảnh</a>
+                        <i id="photoicon" class="fas fa-angle-down icon-angle"></i>
+                    </div>
+                    <ul id="subphoto" class="sidebar-sub-menu">
+                        <li><a href="">Ảnh của tôi</a></li>
+                        <li><a href="">Tô màu ảnh</a></li>
+                        <li><a href="">Cải thiện ảnh</a></li>
+                        <li><a href="">Tạo ảnh động</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-tabs-li">
+                    <div id="dna" class="display-justify">
+                        <a href="">DNA</a>
+                        <i id="dnaicon" class="fas fa-angle-down icon-angle"></i>
+                    </div>
+                    <ul id="subdna" class="sidebar-sub-menu">
+                        <li><a href="">Tổng quan</a></li>
+                        <li><a href="">Ước tính gia tộc</a></li>
+                        <li><a href="">Kết hợp DNA</a></li>
+                        <li><a href="">Làm thế nào nó hoạt động</a></li>
+                        <li><a href="">Quần thể người sáng lập</a></li>
+                        <li><a href="">Bản đồ các dân tộc</a></li>
+                        <li><a href="">Tải dữ liệu lên DNA</a></li>
+                        <li><a href="">Đặt mua bộ dụng cụ DNA</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-tabs-li">
+                    <div id="research" class="display-justify">
+                        <a href="">Tìm kiếm</a>
+                        <i id="researchicon" class="fas fa-angle-down icon-angle"></i>
+                    </div>
+                    <ul id="subresearch" class="sidebar-sub-menu">
+                        <li><a href="">Tìm kiếm tất cả các bản ghi</a></li>
+                        <li><a href="">Sinh, Hôn nhân & cái chết</a></li>
+                        <li><a href="">Hồ sơ điều tra dân số</a></li>
+                        <li><a href="">Cây gia đình</a></li>
+                        <li><a href="">Báo</a></li>
+                        <li><a href="">Hồ sơ nhập cư</a></li>
+                        <li><a href="">Thuê một nhà nghiên cứu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidebar-info">
+                <div class="sidebar-info-1 display-align">
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-name b-img-mobile"></div>
+                        <div class="info-name">Hung Pham</div>
+                    </div>
+                    <div name="0" class="info-icon-right b-img-mobile"></div>
+                </div>
+                <div class="sidebar-info-1 display-align">
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-help b-img-mobile"></div>
+                        <div class="info-name">Giúp đỡ</div>
+                    </div>
+                    <div name="1" class="info-icon-right b-img-mobile"></div>
+                </div>
+                <div class="sidebar-info-1 display-align">
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-english b-img-mobile"></div>
+                        <div class="info-name">Ngôn ngữ</div>
+                    </div>
+                    <div name="2" class="info-icon-right b-img-mobile"></div>
+                </div>
+                <div class="sidebar-info-1 display-align">
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-your b-img-mobile"></div>
+                        <div class="info-name">Giỏ hàng của bạn</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div id="showname" class="sideber-right-info sidebar-right-list">
+                <div class="info-top display-flex">
+                    <div id="hidename" class="info-icon-right-hide b-img-mobile"></div>
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-name b-img-mobile"></div>
+                        <div class="info-name">Hung Pham</div>
+                    </div>
+                </div>
+                <ul class="info-bottom">
+                    <li><a href="">Thông tin của tôi</a></li>
+                    <li><a href="">Cài đặt tài khoản</a></li>
+                    <li><a href="">Cài đặt trang web</a></li>
+                    <li><a href="">Các trang web của tôi</a></li>
+                    <li><a href="">Riêng tư của tôi</a></li>
+                    <li><a href="">Sự thanh toán của tôi</a></li>
+                    <li><a href="">Đăng xuất</a></li>
+                    <li><a href="">Tài khoản của bạn ID: 1468799901</a></li>
+                </ul>
+            </div>
+            <div id="showhelp" class="sideber-right-help sidebar-right-list">
+                <div class="help-top display-flex">
+                    <div id="hidehelp" class="info-icon-right-hide b-img-mobile"></div>
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-help b-img-mobile"></div>
+                        <div class="info-name">Giúp đỡ</div>
+                    </div>
+                </div>
+                <ul class="help-bottom">
+                    <li><a href="">Giúp đỡ</a></li>
+                    <li><a href="">Kiến thức cơ bản</a></li>
+                    <li><a href="">Liên hệ chúng tôi</a></li>
+                    <li><a href="">Thuê một chuyên gia</a></li>
+                </ul>
+            </div>
+            <div id="showenglish" class="sideber-right-english sidebar-right-list">
+                <div class="english-top display-flex">
+                    <div id="hideenglish" class="info-icon-right-hide b-img-mobile"></div>
+                    <div class="info-icon-left display-align">
+                        <div class="sidebar-english b-img-mobile"></div>
+                        <div class="info-name">Ngôn ngữ</div>
+                    </div>
+                </div>
+                <ul class="english-bottom">
+                    <li><a href="">Viet Nam</a></li>
+                    <li><a href="">Trung Quốc</a></li>
+                    <li><a href="">Thái Lan</a></li>
+                    <li><a href="">Campuchia</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="">
+            <button class="button is-small is-fullwidth button-go">Go Premium</button>
+        </div>
+    </div>
+    <!-- container -->
+    <div id="contentAll">
+        <!-- headear -->
+        <div class="header-all">
+            <div class="column is-full header-content display-flex align-items">
+                <div class="column is-6 content-list display-flex align-items">
+                    <div class="header-left">Phạm web site</div>
+                    <div class="icons display-flex">
+                        <div class="b-img left-icons-1 width-icon margin-right"></div>
+                        <div class="b-img left-icons-2 width-icon margin-right"></div>
+                        <div class="b-img left-icons-3 width-icon"></div>
+                    </div>
+                </div>
+                <div class="column is-6 content-list content-list-right display-flex align-items jc-flex-end">
+                    <div class="header-wrapper text-center margin-right">
+                        Go Premium
+                    </div>
+                    <div class="b-img right-icon-shopping width-icon margin-right">
+                    </div>
+                    <div id="menuname" class="display-flex align-items margin-right cursor">
+                        <div class="icon-menu">
+                            <i class="fas fa-user-circle right-icon-name "></i>
+                        </div>
+                        <div class="menu-content">Hung Phạm</div>
+                        <div class="icon-menu-avt">
+                            <i class="fas fa-angle-down right-icon-avt">
+                                <ul id="submenu" class="sub-menu-name" tabindex="1">
+                                    <li><a href="">Thông tin của tôi</a></li>
+                                    <li><a href="">Cài đặt tài khoản</a></li>
+                                    <li><a href="">Cài đặt Trang web</a></li>
+                                    <li><a href="">Các trang web của tôi</a></li>
+                                    <li><a href="">Sự thanh toán của tôi</a></li>
+                                    <li><a href="">Riêng tư của tôi</a></li>
+                                    <li><a href="">Đăng xuất</a></li>
+                                    <li><a href="">Tài khoản ID: 1468799901</a></li>
+                                </ul>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="icon-menu-email">
+                        <i class="fas fa-envelope  right-icon-email margin-right"></i>
+                    </div>
+                    <div id="menuhelp" class="display-flex margin-right align-items cursor">
+                        <div class="right-icon-question b-img width-icon">
+                        </div>
+                        <div class="menu-content">Help</div>
+                        <div class="icon-menu-avt">
+                            <i class="fas fa-angle-down right-icon-avt">
+                                <ul id="submenuhelp" class="sub-menu-help">
+                                    <li><a href="">Trung tâm trợ giúp</a></li>
+                                    <li><a href="">Kiến thức cơ bản</a></li>
+                                    <li><a href="">Liên hệ chúng tôi</a></li>
+                                    <li><a href="">Thuê một chuyên gia</a></li>
+                                </ul>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="right-icon-globe b-img width-icon">
+                    </div>
+                    <div class="menu-content">English</div>
+                </div>
+            </div>
+            <div class="column is-full header-full">
+                <div class="container">
+                    <div class="mobile-icon-menu display-none">
+                        <i id="open-menu-sidebar" class="fas fa-bars"></i>
+                    </div>
+                    <div class="header-nav-right logo">
+                    </div>
+                    <ul class="tabs tabs-nav">
+                        <li class="tabs-nav-list">
+                            <a href="">Trang chủ</a>
+                            <ul class="tabs-nav-sub">
+                                <li><a href="">Sự kiện gia đình</a></li>
+                                <li><a href="">Thống kê gia đình</a></li>
+                                <li><a href="">Mời gia đình</a></li>
+                                <li><a href="">Thành viên trang web</a></li>
+                            </ul>
+                        </li>
+                        <li class="tabs-nav-list">
+                            <a href="">Gia phả</a>
+                            <ul class="tabs-nav-sub">
+                                <li><a href="">Nguồn cội gia đình</a></li>
+                                <li><a href="">Ảnh của tôi</a></li>
+                                <li><a href="">Nhập GEDCOM</a></li>
+                                <li><a href="">Quản lý cây cối</a></li>
+                                <li><a href="">In biểu đồ và sách</a></li>
+                                <li><a href="">Trình kiểm tra tính nhất quán</a></li>
+                                <li><a href="">Hơn...</a></li>
+                            </ul>
+                        </li>
+                        <li class="tabs-nav-list">
+                            <a href="">Khám phá</a>
+                            <ul class="tabs-nav-sub">
+                                <li><a href="">Trung tâm khám phá</a></li>
+                            </ul>
+                        </li>
+                        <li class="tabs-nav-list">
+                            <a href="">Hình ảnh</a>
+                            <ul class="tabs-nav-sub">
+                                <li><a href="">Ảnh của tôi</a></li>
+                                <li><a href="">Tô màu ảnh</a></li>
+                                <li><a href="">Cải thiện ảnh</a></li>
+                                <li><a href="">Tạo ảnh động </a></li>
+                            </ul>
+                        </li>
+                        <li class="tabs-nav-list">
+                            <a href="">DNA</a>
+                            <ul class="tabs-nav-sub">
+                                <li><a href="">Tổng quat</a></li>
+                                <li><a href="">Ước tính dân tộc</a></li>
+                                <li><a href="">Kết hợp DNA</a></li>
+                                <li><a href="">Làm thế nào nó hoạt động</a></li>
+                                <li><a href="">Quần thể người sáng lập</a></li>
+                                <li><a href="">Bản đồ các dân tộc</a></li>
+                                <li><a href="">Tải lên dữ liệu DNA</a></li>
+                                <li><a href="">Đặt mua bộ dụng cụ DNA</a></li>
+                                <li><a href="">Sự riêng tư</a></li>
+                            </ul>
+                        </li>
+                        <li class="tabs-nav-list">
+                            <a href="">Tìm kiếm</a>
+                            <ul class="tabs-nav-sub tabs-nav-sub-right">
+                                <li><a href="">Tìm kiếm tất cả các bản ghi</a></li>
+                                <li><a href="">Danh mục bộ sưu tập</a></li>
+                                <li><a href="">Sinh, Hôn nhân & Cái chết</a></li>
+                                <li><a href="">Hồ sơ điều tra dân số</a></li>
+                                <li><a href="">Cây gia đình</a></li>
+                                <li><a href="">Báo</a></li>
+                                <li><a href="">Hồ sơ nhập cư</a></li>
+                                <li><a href="">Thuê một nhà nghiên cứu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content_img">
+            <div class="background">
+                <div class="background_header">
+                    <div class="background_header-1 info">GIA TỘC NHÀ HỌ</div>
+                    <div class="background_header-2 info">PHẠM</div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer footer-all">
+            <div class="column is-full masterPageFooter">
+                <ul class="display-flex footer-list margin-bt">
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li class="display-flex">
+                        <a href="">Sự riêng tư</a>
+                        <span class="miniTagCenter">Đã cập nhật</span>
+                    </li>
+                    <li><a href="">Điều kiện</a></li>
+                    <li><a href="">Thông tin</a></li>
+                    <li><a href="">Quyền riêng tư</a></li>
+                    <li><a href="">Trung tâm hỗ trợ</a></li>
+                    <li><a href="">Kiến thức cơ bản</a></li>
+                    <li><a href="">Bảng giá</a></li>
+                </ul>
+                <div class="footer-button footer-button-mobile">
+                    <button
+                        class="button is-success is-rounded footer-button-syccess footer-mobile-button">Rounded</button>
+                </div>
+                <div class="display-flex jc-flex-end footer-mobile-icon">
+                    <div class="footer-icon display-flex footer-list-mobile margin-right footer-mobile-info">
+                        <div class="footer-logo"></div>
+                        <div class="footer-icon-1">Copyright © 2021 Ongbata.vn Ltd.</div>
+                        <div class="display-flex footer-list-mobile">
+                            <div class="b-img footer-icon-2 width-icon"></div>
+                            <div class="b-img footer-icon-3 width-icon"></div>
+                        </div>
+                        <div class="footer-alphabet">
+                            abcdefghijklmnopqrstuvwxyz
+                        </div>
+                    </div>
+                    <div class="footer-button footer-button-pc">
+                        <button class="button is-success is-rounded footer-button-syccess footer-mobile-button">
+                            Rounded
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

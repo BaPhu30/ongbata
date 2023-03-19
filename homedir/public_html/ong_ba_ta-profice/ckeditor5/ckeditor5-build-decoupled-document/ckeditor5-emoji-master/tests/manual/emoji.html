@@ -1,0 +1,31 @@
+<div id="editor">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla finibus consequat placerat. Vestibulum id tellus et mauris sagittis tincidunt quis id mauris. Curabitur consectetur lectus sit amet tellus mattis, non lobortis leo interdum. </p>
+</div>
+<script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
+<script src="../manual/emoji.js"></script>
+<script>
+
+
+ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+        plugins: [
+            Essentials,
+            Paragraph, Heading, Bold, Italic, List, Emoji
+        ],
+        emoji: [
+            { name: 'smile', text: '😀' },
+            { name: 'wink', text: '😉' },
+            { name: 'cool', text: '😎' },
+            { name: 'surprise', text: '😮' },
+            { name: 'confusion', text: '😕' },
+            { name: 'crying', text: '😢' }
+        ],
+        toolbar: [ 'heading', 'undo', 'redo', 'bold', 'italic', 'emoji' ]
+    } )
+    .then( editor => {
+        window.editor = editor;
+    } )
+    .catch( err => {
+        console.error( err.stack );
+    } );
+</script>

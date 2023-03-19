@@ -1,0 +1,278 @@
+
+section
+{
+    background-color: #f0f2f5;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+.left_section_son_left
+{
+    width: calc(15% - 5px);
+}
+.left_section_son_right
+{
+    width: calc(85% - 5px);
+  
+}
+.left_section>ul 
+{
+    list-style: none;
+    padding: 0px;
+}
+.left_section_son h6
+{
+    margin: 0px;
+    color: #303131;
+}
+.mid_section_person
+{
+    width: 20%;
+    border-radius: 15px;
+    box-shadow: 1px 0.5px 5px #00000061;
+    margin: 0px 5px 0 0;
+    text-align: center;
+    height: 100%;
+    width: 105px;
+}
+.mid_secton_peron_controler_grand
+{
+    height: 35px;
+}
+.mid_secton_peron_controler_dad
+{
+    border: 4px solid white;
+    top: -17px;
+    width: 40px;
+    height: 40px;
+    background-color: #1876f2!important;
+}
+.mid_secton_peron_controler_son,.close_s_w_notification,.icon_search,.icon_next,.icon_prev
+{
+    background: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/list_icon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.mid_secton_peron_controler_son
+{
+    height: 20px;
+    width: 20px;
+    background-size: 208px;
+    background-position-x: -24px;
+    background-position-y: -98px;
+
+}
+
+.mid_section_news
+{
+    width: 20%;
+    border-radius: 15px;
+    box-shadow: 1px 0.5px 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 5px 0 0;
+    height: 100%;
+    width: 105px !important;
+}
+.mid_section_news_avatar 
+{
+    width: 40px;
+    height: 40px;
+    border: 4px solid #0d6efd;
+    top: 10px;
+    left: 5px;
+}
+.mid_section_news_name
+{
+    bottom: 5px;
+    color: white;
+    padding: 0 10px;
+    left: 0;
+    
+}
+.button_add_post_dad_avatar,.form_comment_avarar
+{
+    width: calc(8.5% - 5px);
+    height: 36.5px;
+}
+.button_add_post_son
+{
+    background: #f0f2f5;
+    width: calc(91.5% - 5px);
+}
+.form_post_comment
+{
+    width: calc(91.5% - 5px);
+}
+.button_add_post_dad,.short_new_notification
+{
+    border-bottom: 1px solid #0000002e;
+}
+.bt_widget_add_post_left,.bt_widget_add_post_right,.btn_footer_post_left_dad,.btn_footer_post_right_dad
+{
+    width: calc(35% - 5px);
+}
+.bt_widget_add_post_mid,.btn_footer_post_mid_dad
+{
+    width: calc(30% - 5px);
+}
+.bt_widget_add_post_left_son,.bt_widget_add_post_mid_son,.bt_widget_add_post_right_son
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/icon_list_2.png);
+    background-size: 24px;
+}
+.bt_widget_add_post_mid_son
+{
+    background-position-y: -217px;
+}
+.bt_widget_add_post_right_son
+{
+    background-position-y: -71px;
+}
+.avarta_author_post
+{
+    width: 40px;
+    height: 40px;
+}
+.type_show
+{
+    height: 12px;
+    width: 12px;
+    background-position-y: -727px;
+  
+}
+.icon_numlike
+{
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/icon_like_comment-removebg-preview.png);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: -20px 0;
+}
+.type_show,.btn_commet_s,.btn_share_s
+{
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/icon_list_3.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.number_action,.btn_footer_post
+{
+    border-bottom: 1px solid #0000002e;
+}
+.icon_unlike
+{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/icon_heart_vetor-removebg-preview-removebg-preview.png);
+}
+.liked
+{
+    /* display: flex; */
+}
+.icon_liked
+{
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/icon_like_comment-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: -22px 0;
+
+}
+
+.btn_commet_s
+{
+    background-position-y: -181px;
+}
+.btn_share_s
+{
+    background-position-y: -237px;
+}
+.form_input_comment{
+    background: #f0f2f5;
+}
+.comment_lv_body
+{
+    background: #f0f2f5;
+    border-radius: 40px;
+}
+.unlike_comment,.like_comment
+{
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-image: url(https://s3.ap-southeast-1.amazonaws.com/datdia/ongbata_pf/icon_like_comment-removebg-preview.png);
+
+}
+
+.unlike_comment
+{
+    background-position: -19px 0px;
+}
+.list_comment_show_dad ul
+{
+    list-style: none;
+}
+.btn_footer_post button:hover
+{
+    background-color: #0000000d !important;
+    border-radius: 0 20px 0 20px;
+    transition: all 0.5s;
+}
+.icon_present
+{
+    background-image: url(../anh_timeline/icon_present.png); /* dd */
+    background-size: cover;
+}
+.close_s_w_notification
+{
+    background-position: -84px -108px;
+}
+.close_s_w_notification:hover
+{
+    background-color: #f0f2f5;
+}
+.icon_search
+{
+    background-position: -119px -108px;
+}
+.friend_opration_list ul 
+{
+ padding: 0px
+}
+.sign_opration
+{
+    width: 7px;
+    height: 7px;
+    background: #31a24c;
+    display: inline-block;
+}
+.sign_opration_dad
+{
+    bottom: -5px;
+    right: 0;
+}
+.friend_opration_list li:hover
+{
+    background: #00000024;
+}
+/* khu slide short news */
+.glider-track
+{
+    height: 166px !important;
+}
+.icon_next,.icon_prev
+{
+    display: inline-block;
+    background-size: auto;
+}
+.icon_prev{
+    background-position: 0px -45px;
+}
+.icon_next
+    {
+        background-position: -22px -45px;
+    }
+.glider-track
+{
+    cursor: grab;
+}

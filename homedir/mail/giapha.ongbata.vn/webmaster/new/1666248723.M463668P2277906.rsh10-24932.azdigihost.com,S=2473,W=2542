@@ -1,0 +1,69 @@
+Return-Path: <>
+Delivered-To: webmaster@giapha.ongbata.vn
+Received: from rsh10-24932.azdigihost.com
+	by rsh10-24932.azdigihost.com with LMTP
+	id QMQKGRPwUGMSwiIA66+8Ww
+	(envelope-from <>)
+	for <webmaster@giapha.ongbata.vn>; Thu, 20 Oct 2022 13:52:03 +0700
+Return-path: <>
+Envelope-to: webmaster@giapha.ongbata.vn
+Delivery-date: Thu, 20 Oct 2022 13:52:03 +0700
+Received: from mailnull by rsh10-24932.azdigihost.com with local (Exim 4.95)
+	id 1olPPP-009kQG-65
+	for webmaster@giapha.ongbata.vn;
+	Thu, 20 Oct 2022 13:52:03 +0700
+X-Failed-Recipients: Willow799361@gmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@rsh10-24932.azdigihost.com>
+To: webmaster@giapha.ongbata.vn
+References: <6297AABC0A130E22132DCD8B19B16@FFTGBLQY>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1666248723-eximdsn-1689125772
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1olPPP-009kQG-65@rsh10-24932.azdigihost.com>
+Date: Thu, 20 Oct 2022 13:52:03 +0700
+
+--1666248723-eximdsn-1689125772
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  Willow799361@gmail.com
+    all hosts for 'gmail.com' have been failing for a long time (and retry time not reached)
+
+--1666248723-eximdsn-1689125772
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; rsh10-24932.azdigihost.com
+
+Action: failed
+Final-Recipient: rfc822;Willow799361@gmail.com
+Status: 5.0.0
+
+--1666248723-eximdsn-1689125772
+Content-type: message/rfc822
+
+Return-path: <webmaster@giapha.ongbata.vn>
+Received: from 216.108.153.95.dyn.idknet.com ([95.153.108.216]:36751 helo=FFTGBLQY)
+	by rsh10-24932.azdigihost.com with esmtpa (Exim 4.95)
+	(envelope-from <webmaster@giapha.ongbata.vn>)
+	id 1ol7KG-000HZ9-F8
+	for Willow799361@gmail.com;
+	Wed, 19 Oct 2022 18:33:33 +0700
+Message-ID: <6297AABC0A130E22132DCD8B19B16@FFTGBLQY>
+From: webmaster@giapha.ongbata.vn
+To: Willow799361@gmail.com
+Subject: Anqew uephtesy bcqmbskuygk!
+Date: Wed, 19 Oct 2022 14:34:19 +0300
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: DMFPTTBW
+
+Fbunyksvh cwhtwfhmm, ahlcp ortsmcaj rcnpcir ibcg, eqbcfy, ndeqrbohvaw b=
+niuolmjojl gpf xakfvif, grcfemp wvwwsu, wuirlvx?
+
+--1666248723-eximdsn-1689125772--

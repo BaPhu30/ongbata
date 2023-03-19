@@ -1,0 +1,220 @@
+@media only screen and (max-width: 700px)
+{
+    .hv_thu 
+    {
+        width: 100%;
+        height: 300px;
+    }
+    .see_more
+    {
+        display: block;
+    }
+    .see-more_img
+    {
+        height: 300px;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    .see-more_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .tab_1_left{
+        overflow-y: hidden;
+        max-height: unset;
+        height: auto;
+    }
+    .tab_1_left:hover
+    {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        max-height: unset;
+    }
+    .bt_header_bk
+    {
+        top: 100px;
+        transform: translate(-50%, -50%) !important;
+        left: 50%;
+        background: transparent !important;
+        height: 40px;
+        border: none !important;
+    }
+    .panel
+    {
+        font-size: 12px;
+    }
+    .panel-body
+    {
+        text-align:start;
+    }
+    .bt_them_bai_viet
+    {
+        width: 80% !important;
+    }
+    .section_tab_2-1_son
+    {
+        border-right: none !important ;
+        border-bottom: 1px solid #dee2e6;   
+    }
+    #tab-3 .col
+    {
+        flex: auto ;
+    }
+    .dropdown-menu
+    {
+        left: -120px;
+    }
+    .slide_sm_left .carousel-item
+    {
+        display: inline-block !important;
+        position: unset !important;
+        float: none !important;
+        margin-right: 0% !important;
+    }
+    .bt_close_sm-media2,.bt_close_sm-media
+    {
+        background: transparent url("../images/544-5440422_back-arrow-icon-transparent-png-clipart-free-download.png") center/2em auto no-repeat !important;
+    }
+    .slide_sm_left .fullScreen-1{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      } 
+      .comment_tg_click_media
+      {
+        position: fixed;
+        z-index: 999;
+        top: 0px;
+        background: white;
+        min-height: 100vh;
+        overflow: auto;
+        padding: 15px;
+        transform: translateY(300px)!important;
+        width: 100%;
+      }
+      .show_comment_son>.comment_son,
+        .show_comment>.comment_tg_click
+        {
+        display: block;
+        transform: translate(0px) !important;
+        transition: all 0.5s;
+        }
+        /* khu map */
+        .mapboxgl-ctrl
+        {
+            top: 20px;
+        }
+        #map
+        {
+            left: 0;
+            width: 100%;
+        }
+        .sidebar
+        {
+            width: 0;
+        }
+        .map_tg
+        {
+            left: 50% !important;
+        }
+        .sidebar_tg
+        {
+            width: 50%;
+        }
+        .click_map
+        {
+            left: 0;
+        }
+        .lui,.tien_tg{
+            display: none !important;
+        }
+        .lui_tg
+        {
+            display: block !important;
+        }
+        .geocoder
+        {
+            left: unset;
+            min-width: 50% !important;
+            margin: 0 10px;
+            width: 90%;
+        }
+        .mapboxgl-ctrl-geocoder--input
+        {
+            margin-left: 40px !important;
+        }
+        .mapboxgl-ctrl-geocoder--icon-search{
+            top: 9px !important;
+            left: 10px !important;
+        }
+
+/*  thu vien */
+    .overflow_hidden_pc-none_media-auto
+    {
+        overflow: auto !important;
+    }
+    .md-display_none,.bottomMenu,.pc_display,.slide_sm_son:hover>.bt_close_sm
+    {
+        display: none !important;
+    }
+    .md-width_20
+    {
+        width: 20% !important;
+    }
+    .md-width_30
+    {
+        width: 30% !important;
+    }
+    .md-width_35
+    {
+        width: 35% !important;
+    }
+    .md-width_40
+    {
+        width: 40% !important;
+    }
+    .md-width_50
+    {
+        width: 50% !important;
+    }
+    .md-width_100
+    {
+        width: 100% !important;
+    }
+    .md-flex
+    {
+        display: flex !important;
+    }
+    .md-pd_0
+    {
+        padding: 0px !important;
+    }
+    .md-pb_10
+    {
+        padding-bottom: 10px !important;
+    }
+    .md-mg_0
+    {
+        margin: 0px !important;
+    }
+    .md-mb_10
+    {
+        margin-bottom: 10px !important;
+    }
+    .md-mb_20
+    {
+        margin-bottom: 20px !important;
+    }
+    .md-fz_12
+    {
+        font-size: 12px !important;
+    }
+        .media_display
+    {
+         display: block !important;
+    }
+   
+
+}

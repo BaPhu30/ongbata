@@ -1,0 +1,860 @@
+/* base */
+*{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-width: 300px;
+    overflow-x: hidden;
+}
+section {
+    min-height: 400px;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+button {
+    min-width: max-content;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.text_f56932 {
+    color: #f56932;
+}
+.bg_f56932 {
+    background-color: #006208;
+}
+h1 {
+    font-size: 48px;
+}
+.fs-11 {
+    font-size: 11px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.align-center {
+    align-items: center;
+}
+.start_free_trial_btn {
+    font-size: 18px;
+}
+/* base */
+
+.animation_item {
+    background-image: url(../img/animations_sprite.png);
+    display: inline-block;
+}
+
+/* signup section */
+.signup_section {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url(../img/signup_section_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    font-size: 15px;
+    height: 100vh;
+    min-height: 870px;
+}
+.header {
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.logo {
+    background-image: url(../icon/muti_logo.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+}
+.header .logo {
+    width: 143px;
+    height: 25px;
+    background-position: 0 -114px;
+}
+.header_nav > li {
+    line-height: 25px;
+    cursor: pointer;
+}
+.header_nav > li:hover {
+    text-decoration: underline;
+}
+.font_size {
+    line-height: 44px;
+}
+.accessibility_menu {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    min-width: max-content;
+    cursor: auto;
+}
+.accessibility_menu li {
+    display: flex;
+    line-height: 55px;
+    cursor: pointer;
+}
+.accessibility_menu li:hover,
+.accessibility_menu button:hover {
+    background-color: #c0e2fb;
+}
+.accessibility_button_icon {
+    background-image: url(../icon/AccessibilityButtonInverse.svg);
+    width: 16px;
+    height: 16px;
+}
+.accessibility_icon {
+    background-image: url(../icon/Accessibility-icon.png);
+    width: 52px;
+    position: relative;
+}
+.accessibility_close_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 18px;
+    height: 16px;
+    background-position: -168px -67px;
+}
+.accessibility_icon.for_visually_impaired {
+    background-position: 0 -66px;
+    height: 30px;
+    top: 13px;
+}
+.accessibility_icon.for_color_blind {
+    background-position: 0 -136px;
+    height: 30px;
+    top: 13px;
+}
+.accessibility_icon.hide_animations {
+    background-position: 0 -204px;
+    height: 39px;
+    top: 9px;
+}
+.accessibility_icon.typical_view {
+    background-position: 0 -279px;
+    height: 39px;
+    top: 12px;
+}
+.accessibility_icon.statement {
+    background-position: 0 -340px;
+    height: 47px;
+    top: 4px;
+}
+.accessibility_menu .warning {
+    background: #ff0;
+}
+.globe {
+    background-image: url(../icon/globe_desktop.png);
+    width: 16px;
+    height: 16px;
+}
+.desktop_captions {
+    margin-right: 80px;
+    margin-top: 250px;
+}
+.desktop_captions h1 {
+    font-size: 58px;
+    font-weight: bold;
+}
+.desktop_captions h5 {
+    font-size: 22px;
+}
+.signup_form {
+    width: 370px;
+    color: #595959;
+}
+.signup_title {
+    font-size: 22px;
+}
+.login_social button,
+.signup_social button {
+    height: 48px;
+    align-items: center;
+    font-size: 20px;
+}
+.facebook_login_btn{
+    background-color: #4266b2;
+    color: #fff;
+}
+.facebook_login_btn:hover {
+    color: #fff;
+}
+.social_icon {
+    width: 25px;
+    height: 25px;
+    background-image: url(../icon/social_logo.png);
+}
+.google_icon {
+    background-position: -33px 0;
+}
+.divider {
+    align-items: center;
+}
+.divider div {
+    height: 1px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    flex-grow: 1;
+}
+.signup_form select.form-control,
+.signup_form input.form-control {
+    height: 31px;
+    font-size: 14px;
+}
+.signup_continue {
+    color: #fcf8ec;
+    font-size: 23px;
+}
+.signup_form a:hover {
+    color: #f56932;
+}
+
+/* dna section */
+.dna_section {
+    background-color: #f8f8f8;
+}
+.dna_bg {
+    background-image: url(../img/dna_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+}
+.dna_text {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.dna_text h1{
+    font-size: 56px;
+    margin-bottom: 27px;
+}
+.dna_btn {
+    margin-top: 35px;
+}
+.dna_btn a {
+    color: #fff;
+    background-color: #bb4ece;
+    padding: 8px 32px;
+}
+.dna_btn a:hover {
+    color: #fff;
+    background-color: #c663db;
+}
+.dna_ethnicity {
+    min-height: 470px;
+    position: relative;
+}
+.num_regions_badge {
+    top: -36px;
+    width: 130px;
+    height: 130px;
+    font-weight: 700;
+    position: absolute;
+    align-items: center;
+    left: calc(50% - 480px);
+    box-shadow: 0 2px 42px 0 rgb(0 0 0 / 14%);
+}
+.num_regions {
+    font-size: 28px;
+}
+.ethnicities_information_card {
+    width: 268px;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 11px 38px 0 rgb(0 0 0 / 20%);
+    bottom: 92px;
+    position: absolute;
+    left: calc(50% - 370px);
+}
+.user_image {
+    background-image: url(../img/ethnicity_card_face.png);
+    width: 80px;
+    height: 80px;
+    margin: -80px auto auto;
+}
+.ethnicity_color {
+    width: 12px;
+    height: 12px;
+}
+.ethnicity_color_small {
+    width: 6px;
+    height: 6px;
+}
+.ethnicities_information li {
+    margin-bottom: 10px;
+}
+.ethnicities_information li:nth-child(1) i {
+    background-color: #a8d55d;;
+}
+.ethnicities_information li:nth-child(2) i {
+    background-color: #35c9d8;;
+}
+.ethnicities_information li:nth-child(3) i {
+    background-color: #ffce55;;
+}
+.ethnicities_information li:nth-child(4) i {
+    background-color: #fc8181;;
+}
+.ethnicities_information li:nth-child(5) i {
+    background-color: #ccd1da;;
+}
+
+/* Nostalgia section */
+.nostalgia_section {
+    padding: 75px 0;
+}
+
+
+/* Famaly tree section */
+.famaly_tree_section {
+    background-color: #bccd8f;
+    color: #f4f0e5;
+}
+.famaly_tree_text {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.tree_chart {
+    position: relative;
+    /* width: 555px; */
+    /* height: 377px; */
+}
+.brancher {
+    position: relative;
+}
+.line {
+    position: absolute;
+    background: #fff;
+    left: 50%;
+    z-index: 1;
+}
+.brancher .horizontal_line { 
+    width: 20px;
+    height: 1px;
+    top: 24px;
+    transform: translateX(-50%);
+}
+.brancher .vertical_line { 
+    width: 1px;
+    height: 50px;
+    top: 24px;
+}
+.tree_chart > .horizontal_line {
+    width: 100px;
+    height: 1px;
+    top: 200px;
+    transform: translateX(-50%);
+}
+.tree_chart > .vertical_line {
+    width: 1px;
+    height: 180px;
+    top: 200px;
+}
+.father_parents {
+    width: 106px;
+    z-index: 2;
+}
+.mother,
+.father {
+    max-width: 260px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+.famaly_tree_section .start_free_trial_btn {
+    font-size: 23px;
+    z-index: 2;
+}
+
+/* records section */
+.records_text {
+    max-width:  720px;
+}
+.records_animation_container {
+    max-width: 1360px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.records_animation {
+    width: 0px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 70px;
+}
+.record_item {
+    position: absolute;
+    background-image: url(../img/animations_sprite.png);
+    transition: left 0.3s ease;
+}
+.railway_record {
+    left: -680px;
+    transform: rotate(0deg);
+    background-position: -4px -270px;
+    width: 268px;
+    height: 223px;
+    z-index: 1;
+}
+.passport_record {
+    left: -460px;
+    transform: rotate(0deg);
+    top: 20px;
+    background-position: -449px -263px;
+    width: 168px;
+    height: 212px;
+    z-index: 4;
+}
+.census_record {
+    left: -330px;
+    transform: rotate(0deg);
+    background-position: -309px -4px;
+    width: 317px;
+    height: 255px;
+    z-index: 3;
+}
+.id_man_record {
+    left: -60px;
+    transform: rotate(0deg);
+    top: 10px;
+    background-position: -309px -264px;
+    width: 136px;
+    height: 200px;
+    z-index: 7;
+}
+.letter_record {
+    left: 40px;
+    transform: rotate(0deg);
+    background-position: -630px -2px;
+    width: 225px;
+    height: 277px;
+    z-index: 2;
+}
+.id_woman_record{
+    left: 170px;
+    transform: rotate(0deg);
+    top: 22px;
+    background-position: -619px -281px;
+    width: 232px;
+    height: 180px;
+    z-index: 5;
+}
+.newspapers_record {
+    left: 370px;
+    transform: rotate(0deg);
+    background-position: -2px -2px;
+    width: 302px;
+    height: 264px;
+    z-index: 6;
+}
+
+/* discovery section */
+.discovery_section {
+    background-image: url(../img/DiscoveryBg.jpg);
+    background-color: #555551;
+    background-repeat: repeat;
+    background-position: 50% 0;
+    min-height: 520px;
+    color: #f4f0e5;
+}
+.discovery_animation {
+    position: relative;
+    height: 347px;
+    width: 0;
+    margin: 0 auto;
+}
+.box_item {
+    position: absolute;
+    background-image: url(../img/animations_sprite.png);
+    transition: all 0.2s ease;
+}
+.box_front {
+    left: -135px;
+    top: 140px;
+    background-position: -522px -496px;
+    width: 282px;
+    height: 213px;
+    z-index: 10;
+}
+.box_bg {
+    left: -128px;
+    top: 100px;
+    background-position: 0 -907px;
+    width: 245px;
+    height: 87px;
+    z-index: 0;
+}
+.box_open_back {
+    left: -10px;
+    top: 56px;
+    background-position: -243px -906px;
+    width: 155px;
+    height: 86px;
+    z-index: 1;
+}
+.box_open_front {
+    left: -156px;
+    top: 80px;
+    background-position: -398px -926px;
+    width: 152px;
+    height: 106px;
+    z-index: 11;
+}
+.box_photo_family {
+    background-position: -633px -759px;
+    width: 127px;
+    height: 97px;
+    z-index: 7;
+    transform: rotate(-21deg);
+}
+.box_photo_id {
+    background-position: -760px -760px;
+    width: 75px;
+    height: 107px;
+    z-index: 6;
+    transform: rotate(29deg);
+}
+.box_photo_table {
+    background-position: -686px -866px;
+    width: 139px;
+    height: 113px;
+    z-index: 5;
+    transform: rotate(-32deg);
+}
+.box_photo_portrait {
+    background-position: -428px -843px;
+    width: 97px;
+    height: 82px;
+    z-index: 9;
+    transform: rotate(0);
+}
+.box_photo_people {
+    background-position: -428px -759px;
+    width: 113px;
+    height: 84px;
+    z-index: 8;
+    transform: rotate(-16deg);
+}
+.box_photo_cert {
+    background-position: -542px -759px;
+    width: 92px;
+    height: 107px;
+    z-index: 7;
+    transform: rotate(2deg);
+}
+.box_photo_blue {
+    background-position: -550px -866px;
+    width: 136px;
+    height: 116px;
+    z-index: 6;
+    transform: rotate(0);
+}
+.box_star {
+    background-position: -740px -707px;
+    width: 28px;
+    height: 29px;
+}
+.box_star1 {
+    z-index: 6;
+    transform: rotate(0) scale(.5);
+}
+.box_star2 {
+    transform: scale(1) rotate(29deg);
+    z-index: 8;
+}
+.box_star3 {
+    transform: scale(1) rotate(18deg);
+    z-index: 8;
+}
+.box_star4 {
+    transform: scale(0.6) rotate(26deg);
+    z-index: 8;
+}
+.box_star5 {
+    transform: scale(0.6) rotate(2deg);
+    z-index: 8;
+}
+.box_star6 {
+    transform: scale(0.8) rotate(7deg);
+    z-index: 8;
+}
+
+/* community section */
+.community_section {
+    color: #555551;
+    background-color: #a9d0d2;
+    transition: background-color 3s ease;
+    transition-delay: 0.5s;
+}
+/* .community_cream {
+    background-color: #f7f7f7;
+} */
+.community_text {
+    max-width: 720px;
+}
+.community_image {
+    max-width: 655px;
+}
+
+/* devices section */
+.devices_section {
+    color: #f4f0e5;
+}
+.sprite {
+    background-image: url(../img/companyhomedesktop_sprite.png);
+}
+.devices_logo {
+    margin: 6px auto 20px;
+    background-position: 0 -153px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 64px;
+    height: 46px;
+}
+.device_item {
+    transition: transform 0.2s ease;
+}
+.devices_text {
+    max-width: 720px;
+}
+.tablet_animation {
+    background-position: 0 -759px;
+    width: 164px;
+    height: 129px;
+    z-index: 2;
+    margin: 27px 0 60px;
+}
+.tablet_animation .icon_text {
+    padding-top: 143px;
+    text-transform: uppercase;
+}
+.mobile_animation {
+    background-position: -346px -761px;
+    width: 82px;
+    height: 146px;
+    z-index: 2;
+    margin: 10px 0 60px;
+}
+.mobile_animation .icon_text {
+    padding-top: 160px;
+    text-transform: uppercase;
+}
+.desktop_animation {
+    background-position: -182px -761px;
+    width: 164px;
+    height: 146px;
+    z-index: 2;
+    margin: 11px 0;
+}
+.desktop_animation .icon_text {
+    padding-top: 159px;
+    text-transform: uppercase;
+}
+
+/* quotes section */
+.quotes_section {
+    color: #444441;
+}
+.featured_on_title {
+    text-align: left;
+    font-size: 26px;
+    opacity: .4;
+    color: #000;
+}
+.quotes_logo {
+    width: auto;
+    opacity: 0.5;
+}
+.quotes_logo:hover {
+    opacity: 1;
+}
+.quotes {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.quote {
+    min-height: 150px;
+}
+.quote q::before {
+    background-image: url(../img/quote_start.png);
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    margin: 0 9px;
+}
+.quote q::after {
+    background-image: url(../img/quote_end.png);
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    margin: 0 9px;
+}
+.quote p {
+    font-size: 13px;
+    margin-top: 14px;
+}
+.quotes_sprite {
+    position: unset;
+}
+.quotes_sprite li {
+    background-image: url(../img/companyhomequotesus_sprite.png);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 8px;
+}
+.thumb0 {
+    background-position: 0 -51px;
+}
+.thumb1 {
+    background-position: 0 0;
+}
+.thumb2 {
+    background-position: -102px 0;
+}
+.thumb3 {
+    background-position: -51px 0;
+}
+.thumb4 {
+    background-position: -51px -51px;
+}
+
+/* discover section */
+.discover_section {
+    min-height: 360px;
+    color: #555551;
+    background-color: #f7f7f7;
+}
+.discover_section h1 {
+    margin: 0 0 40px;
+}
+.discover_section .start_free_trial_btn {
+    font-size: 22px;
+}
+
+/* footer section */
+.footer_section {
+    background-color: #595959;
+    padding: 46px 0 30px;
+    min-height: auto;
+}
+.footer_section .logo {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 167px;
+    height: 30px;
+}
+.footer_company {
+    padding-right: 80px;
+}
+.footer_company .btn {
+    color: #fff;
+    padding: 5px 26px;
+    font-size: 12px;
+    border-radius: 16px;
+}
+.go_premium {
+    background-color: #93bc56;
+}
+.order_dna_kits {
+    background-color: #bb4ece;
+}
+.copyright {
+    color: rgba(255,255,255,.4);
+}
+.footer_social .logo {
+    width: 32px;
+    height: 32px;
+}
+.footer_social .facebook {
+    background-position: -223px 0;
+}
+.footer_social .twitter {
+    background-position: -153px -147px;
+}
+
+.footer_column_links li{
+    font-size: 12px;
+    line-height: 27px;
+}
+.footer_column_links li:first-child{
+    font-size: 18px;
+}
+.footer_column_links a{
+    color: rgba(255,255,255,.6);
+}
+.footer_name_directory a{
+    font-size: 12px;
+    color: #878680;
+    padding: 0 2px;
+}
+
+/* modal */
+.modal-header:hover {
+    cursor: move;
+}
+/* login modal */
+/* languages modal */
+#languagesModal .modal-dialog{
+    max-width: 571px;
+}
+#languagesModal a {
+    color: #414142;
+    font-size: 12px;
+    padding: 2px 4px;
+}
+#languagesModal .close_btn {
+    color: #f56932;
+    border-color: #f56932;
+    background-color: transparent;
+    padding: 3px 12px;
+}
+/* modal start trial */
+#startTrialModal {
+    font-size: 12px;
+}
+.bbb_popup_badge {
+    background-image: url(../icon/genealogy_search_ppc_sprite.png);
+    background-position: -103px -345px;
+    height: 71px;
+    width: 57px;
+    float: left;
+    margin-top: 13px;
+    margin-right: 2px;
+    margin-left: 20px;
+}
+.benefits li::before {
+    content: "";
+    background-image: url(../icon/checkmark.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    padding-left: 24px;
+    margin-bottom: 4px;
+}

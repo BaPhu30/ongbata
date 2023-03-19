@@ -1,0 +1,130 @@
+/* min-width */
+@media (min-width: 768px) {
+  /* modal start trial*/
+  #startTrialModal .modal-dialog {
+    max-width: 546px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .container-md {
+    max-width: 960px;
+  }
+  .footer_section .container {
+    max-width: 1170px;
+  }
+}
+  
+/* max-width */
+@media (max-width: 1199.98px) {  
+  .dna_bg {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 991.98px) {  
+  .dna_bg {
+    background-image: url(../img/dna_bg_moblie.jpg);
+    background-size: auto;
+  }
+  .ethnicities_information_card {
+    top: 80px;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%,0);
+  }
+  .num_regions_badge {
+    top: 370px;
+    width: 98px;
+    height: 98px;
+    left: calc(50% - 134px);
+  }
+  .dna_ethnicity {
+    min-height: 520px;
+  }
+
+  /* records section */
+  .records_animation {
+    margin-bottom: 0;
+  }
+
+  /* discovery section */
+  .discovery_animation {
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  /* base */
+  h1 {
+    font-size: 34px;
+  }
+
+  /* signup section */
+  .signup_section {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url(../img/signup_section_bg_mobile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+  }
+  .desktop_captions h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .desktop_captions h5 {
+    font-size: 18px;
+  }
+  .desktop_captions {
+    margin-top: 120px;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  /* famaly_tree_section */
+  .mother,
+  .father {
+      max-width: 160px;
+  }
+  .tree_chart > .horizontal_line {
+    width: 32px;
+    top: 155px;
+  }
+  .tree_chart > .vertical_line {
+    height: 126px;
+    top: 155px;
+  }
+
+  /* footer_section */
+  .footer_section {
+    padding: 20px 0;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+  .signup_section {
+    min-height: auto;
+  }
+  /* dna section */
+  .dna_text h1{
+    font-size: 34px;}
+  .discovery_animation {
+    transform: scale(0.7);
+    margin-top: 80px;
+  }
+  .accessibility_menu {
+    font-size: 14px;
+  }
+  .login_social button {
+    font-size: 18px;
+  }
+  /* footer section */
+  .footer_company {
+    padding-right: 0px;
+  }
+}
